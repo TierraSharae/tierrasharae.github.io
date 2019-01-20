@@ -695,7 +695,7 @@ body.section-show .transition-mask:before{
 	margin:0;
 }
 .info-list > li > .inner > h4{
-	font-size:10px;
+	font-size:13px;
 	letter-spacing:4px;
 	margin-right:16px;
 	margin-bottom:8px;
@@ -703,7 +703,7 @@ body.section-show .transition-mask:before{
 	color:#333;
 }
 .info-list > li > .inner > p{
-	font-size:16px;
+	font-size:13px;
 	color:#777;
 	display:block;
 }
