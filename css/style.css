@@ -490,6 +490,10 @@ body.section-show .transition-mask:before{
 	transform:rotate(-45deg) translateY(40px);
 }
 
+.hidden {display: none;}
+.unhidden {display: block;}
+
+
 .front-person-titles{
 	position:relative;
 	z-index:20;
@@ -1889,7 +1893,7 @@ body .symp-btn{
 	}
 
 	.front-heading{
-		margin-top:0px;
+		margin-top:80px;
 	}
 }
 @media (max-width:768px){
