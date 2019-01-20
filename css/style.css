@@ -490,12 +490,6 @@ body.section-show .transition-mask:before{
 	transform:rotate(-45deg) translateY(40px);
 }
 
-.hidden {
-	display: none;
-}
-.unhidden {
-	display: block;
-}
 
 
 .front-person-titles{
