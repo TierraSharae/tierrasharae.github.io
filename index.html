@@ -25,6 +25,16 @@
 		<link rel='stylesheet' type='text/css' href='css/color-default.css' >
 
 
+		<script type="text/javascript">
+		 function unhide(divID) {
+		 var item = document.getElementById(divID);
+		 if (item) {
+		 item.className=(item.className=='hidden')?'unhidden':'hidden';
+		 }
+		 }
+		</script>
+
+
 	</head>
 
 	<body>
@@ -105,7 +115,8 @@
 							</li>
 
 							<li>
-								<a href='#' data-section='portfolio' >Portfolio</a>
+								<a href="javascript:unhide('displaybx');">Portfolio</a>
+								<div id="displaybx" class="hidden">Content to be revealed</div>
 							</li>
 
 							<li>
@@ -571,7 +582,7 @@
 								</div>
 
 							</li>
-							
+
 
 							<li class='timeline-header' >
 								<h4>Experience</h4>
