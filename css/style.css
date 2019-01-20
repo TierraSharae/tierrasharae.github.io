@@ -509,7 +509,7 @@ body.section-show .transition-mask:before{
 	display:block;
 	width:100%;
 	font-family:Hind, sans-serif;
-	color:#CCC;
+	color:#162935;
 	text-align:center;
 	font-size:24px;
 	letter-spacing:25px;
@@ -519,7 +519,6 @@ body.section-show .transition-mask:before{
 .front-person-titles > .t1{
 	left:5px;
 	bottom:0;
-	color:#162935;
 	-webkit-transform:rotate(-90deg) translateY(-100%);
 	-moz-transform:rotate(-90deg) translateY(-100%);
 	-ms-transform:rotate(-90deg) translateY(-100%);
