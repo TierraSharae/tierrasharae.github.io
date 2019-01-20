@@ -542,11 +542,11 @@ body.section-show .transition-mask:before{
 .front-person-titles > .t3{
 	left:0;
 	bottom:5px;
-	-webkit-transform:translateY(100%) rotate(180deg);
-	-moz-transform:translateY(100%) rotate(180deg);
-	-ms-transform:translateY(100%) rotate(180deg);
-	-o-transform:translateY(100%) rotate(180deg);
-	transform:translateY(100%) rotate(180deg);
+	-webkit-transform:translateY(-100%);
+	-moz-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	-o-transform:translateY(-100%);
+	transform:translateY(-100%);
 }
 
 
