@@ -685,7 +685,7 @@ body.section-show .transition-mask:before{
 .info-list > li{
 	margin-bottom:20px;
 	float:left;
-	width:2%;
+	width:25%;
 }
 .info-list > li > .inner{
 	padding:15px 0;
