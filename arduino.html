@@ -83,10 +83,10 @@
 						
 						<div class='col-md-8' >
 							
-						<img class ="unclarifyDemo" src='img/unclarify.gif' alt='Unclarify'>
+						<img class ="arduinoDemo" src='img/unclarify.gif' alt='Unclarify'>
 
 						<style>
-							.unclarifyDemo > img{
+							.arduinoDemo > img{
 								height:2px;
 								border:solid 3px black;
 								display: inline-block;
@@ -105,7 +105,7 @@
 									
 									<h4><i class='ion-ionic' ></i>Tools</h4>
 									
-									<p>C, HTML, CSS, JavaScript</p>
+									<p>Arduino Uno, C, HTML, CSS, JavaScript</p>
 									
 								</li>
 								
@@ -113,11 +113,17 @@
 									
 									<h4><i class='ion-ios-calendar-outline' ></i>Date</h4>
 									
-									<p>Mar. 2019</p>
+									<p>April 2019</p>
 									
 								</li>
 
-								
+								<li>
+									
+									<h4><i class='ion-ios-people-outline' ></i>Developers</h4>
+									
+									<p>Tierra Sharae, Alexandra Rumyantseva,<br>Alicia Teo, Amber Wright</p>
+									
+								</li>
 								
 								
 								
@@ -139,7 +145,22 @@
 							<h4>Unclarify</h4>
 							
 							<p>
-								Unclarify is a web application that implements a box blur on a bitmap image. The box-size and .bmp file are provided by the user, who can learn more about box blur by clicking "Need help?" The blurring algorithm was written in C and uses multithreading to efficiently blur the image. It also utilizes QDBMP, a cross-platform C library for handling BMP image files. Finally, the user interface was created using HTML, CSS, and JavaScript. Source code is available upon request. <br> <em><center>View more projects <a href="https://github.com/TierraSharae/PhillyCrimeDetector" target="_blank"> here.</center></a></em>
+
+								As a project for CIT 595: Computer Systems Programming at the University of Pennsylvania, I worked with three classmates to develop a system with embedded and webcomponents. Our web application gets data from and sends control information to a remote sensor and display driven by an Arduino microcontroller and implements the following features:
+
+								<li>The user can see the most recent temperature sensor reading.</li>
+								<li>The user can see the average, low, and high temperature sensor reading for the past hour.</li>
+								<li>Temperature sensor readings are dynamically added to a chart, created using the JavaScript library, Plotly.
+								<li>The user can decide whether to see temperature readings and statistics either in Fahrenheit or Celsius. 
+									<br>Additionally, the 7-segment display on the sensor can show the temperature either in Fahrenheit or Celsius.</li>
+								<li>The user can put the sensor into a stand-by (pause) mode in which it is not reporting temperature readings to the user interface or to the display. However, during this time, the readings are tracked to determine the high, low, and average.</li>
+								<li>If the middleware cannot get a reading from the sensor (e.g. because the sensor is disconnected), an alert is displayed to the user.</li>
+								<li>The sensor can then be reconnected and resume normal operations without needing to restart the middleware.</li>
+								<li>The user can press a button to change the colors on the Arduino LED.</li>
+
+
+						<br>
+								Communication between the sensor and the user interface was written in C, and the user interface was created using HTML, CSS, and JavaScript. Source code is available upon request. <br> <em><center>View more projects <a href="https://github.com/TierraSharae/PhillyCrimeDetector" target="_blank"> here.</center></a></em>
 							</p>
 							
 						</div>
