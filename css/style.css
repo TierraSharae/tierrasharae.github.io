@@ -36,6 +36,29 @@
 /*=======================================================================
 	General CSS
 =======================================================================*/
+
+
+.image-table {
+ border: 0px solid rgba(0, 0, 0, 0);
+ border-collapse: separate;
+ border-spacing: 6px;
+ table-layout: fixed;
+ text-align: center;
+ width: 100%;
+}
+
+
+.image-table img {
+ border: 10px solid #fff;
+ box-sizing: border-box;
+ -webkit-box-shadow: 0 0 10px #999;
+ box-shadow: 0 0 10px #999;
+}
+
+
+
+
+
 *{
 	margin:0;
 	padding:0;
@@ -209,7 +232,8 @@ body.section-show .section.active{
 	margin:0;
 	margin-top:3.5px;
 	font-style:italic;
-	font-family:'Playfair Display', serif;
+	font-family: Raleway, sans-serif;
+	/*font-family:'Playfair Display', serif;*/
 	color:#999;
 }
 .footer-social{
@@ -437,18 +461,23 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:60px;
-	padding-bottom:200px;
+	/*padding-top:60px;*/
+	padding-bottom:20px;
 	position:relative;
 }
 .front-heading{
 	text-align:center;
-	margin-top:190px;
+	margin-top:60px;
 }
-.front-heading > h2{
+
+.front-heading-portfolio{
+	text-align:center;
+	margin-top:150px;
+}
+.front-heading > h2, .front-heading-portfolio > h2{
 	font-size:55px;
 	font-weight:lighter;
-	letter-spacing:15px;
+	letter-spacing:6px;
 	position:relative;
 	position:relative;
 	line-height:1em;
@@ -457,8 +486,8 @@ body.section-show .transition-mask:before{
 	*zoom:1;
 	z-index:10;
 	color:#999;
-	font-family: 'Playfair Display', serif;
-	font-style:italic;
+	/*font-family: 'Playfair Display', serif;*/
+	/*font-style:italic;*/
 }
 
 .front-person-img{
@@ -471,7 +500,7 @@ body.section-show .transition-mask:before{
 	-webkit-transition:height .5s .3s ease, transform .5s .8s ease;
 	-moz-transition:height .5s .3s ease, transform .5s .8s ease;
 	transition:height .5s .3s ease, transform .5s .8s ease;
-	margin:200px auto;
+	margin:150px auto;
 	margin-bottom:0;
 	-webkit-transform:rotate(45deg);
 	-moz-transform:rotate(45deg);
@@ -1798,7 +1827,7 @@ body .symp-btn{
 	.front-section{
 		padding-bottom:110px;
 	}
-	.front-heading > h2{
+	.front-heading, .front-heading-portfolio > h2{
 		font-size:50px;
 	}
 	.front-person-img{
@@ -1892,7 +1921,7 @@ body .symp-btn{
 		bottom:auto !important;
 	}
 
-	.front-heading{
+	.front-heading, .front-heading-portfolio{
 		margin-top:80px;
 	}
 }
