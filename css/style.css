@@ -1580,9 +1580,9 @@ body .symp-btn{
 }
 .portfolio-items > .item > .inner > img{
 	width:100%;
-	 /*border-bottom: .5px solid #999;*/
- box-sizing: border-box;
- -webkit-box-shadow: 0 0 1px #999;
+	 /*border: .5px solid #999;*/
+ /*box-sizing: border-box;*/
+ /*-webkit-box-shadow: 0 0 1px #999;*/
  box-shadow: 0 0 1px #999;
 }
 .portfolio-items > .item > .inner{
@@ -1635,7 +1635,7 @@ body .symp-btn{
 	-webkit-transition:all .3s .1s ease;
 	-moz-transition:all .3s .1s ease;
 	transition:all .3s .1s ease;
-	color: #fff;
+	/*color: #fff;*/
 }
 .portfolio-items > .item > .inner:hover > .caption > .caption-inner > h4{
 	-webkit-transform:translateY(0);
@@ -1645,7 +1645,7 @@ body .symp-btn{
 	transform:translateY(0);
 	opacity:1;
 	visibility:visible;
-	color: #fff;
+	/*color: #fff;*/
 }
 
 .portfolio-items > .item > .inner:hover > .caption > .caption-inner > h4, a{
