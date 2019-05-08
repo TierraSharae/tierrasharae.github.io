@@ -1,3 +1,3 @@
 # tierrasharae.github.io
 
-Template by Noman Ali Samejo, edited by Tierra Sharae
+Original code by Noman Ali Samejo, edited by Tierra Sharae
