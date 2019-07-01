@@ -900,6 +900,13 @@ body.section-show .transition-mask:before{
 /*=======================================================================
 	Resume Section
 =======================================================================*/
+
+.col-md-6 > .section-header > .animate text-over-block > .divider-draft > a{
+	color: blue;
+}
+
+
+
 .timeline-block{
 	padding-bottom:100px;
 }
@@ -1649,7 +1656,7 @@ body .symp-btn{
 }
 
 .portfolio-items > .item > .inner:hover > .caption > .caption-inner > h4, a{
-		color: #fff;
+	color: #fff;
 	-webkit-transform:translateY(0);
 	-moz-transform:translateY(0);
 	-ms-transform:translateY(0);
@@ -1661,7 +1668,7 @@ body .symp-btn{
 }
 
 .portfolio-items > .item > .inner:hover > .caption > .caption-inner > h4, a:hover{
-		color: #fff;
+	color: #fff;
 	-webkit-transform:translateY(0);
 	-moz-transform:translateY(0);
 	-ms-transform:translateY(0);
