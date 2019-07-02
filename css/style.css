@@ -53,6 +53,14 @@
     box-shadow: 0 0 10px #999;
 }
 
+a {
+    color: #959595;
+}
+
+a:hover {
+    color: #B7A389;
+}
+
 
 /*.column {
   float: left;
@@ -1873,8 +1881,7 @@ body .symp-btn {
     /*color: #fff;*/
 }
 
-.portfolio-items>.item>.inner:hover>.caption>.caption-inner>h4,
-a {
+.portfolio-items>.item>.inner:hover>.caption>.caption-inner>a {
     color: #fff;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1885,8 +1892,7 @@ a {
     visibility: visible;
 }
 
-.portfolio-items>.item>.inner:hover>.caption>.caption-inner>h4,
-a:hover {
+.portfolio-items>.item>.inner:hover>.caption>.caption-inner>a:hover {
     color: #fff;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
