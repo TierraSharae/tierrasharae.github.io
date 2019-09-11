@@ -86,36 +86,12 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+
+/* @media screen and (max-width: 600px) {
     .customiced-gallery-column {
         flex: 100%;
         max-width: 100%;
     }
-}
-
-
-/* .customiced-gallery {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    margin-right: 2%;
-    margin-left: 2%;
-    flex: 1;
-    flex-basis: 20%;
-}
-
-.customiced-gallery>img {
-    align-content: center;
-    width: 100%;
-    margin-bottom: 10px;
-} */
-
-
-/* .customiced-gallery>img {
-    width: 50%;
 } */
 
 
