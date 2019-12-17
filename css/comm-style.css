@@ -11,6 +11,11 @@
 }
 
 
+.mobilenote{
+  display:none;
+}
+
+
 /*=======================================================================
 
 	Item Name 		|		Symp - Responsive One Page VCard/Resume Template
@@ -154,7 +159,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-weight: lighter;
+
     font-family: Raleway, sans-serif;
 }
 
@@ -1515,6 +1522,11 @@ body.section-show .transition-mask:before {
 =======================================================================*/
 
 @media (max-width:992px) {
+
+
+.mobilenote{
+    display:inline;
+  }
 
   .portfolio-items{
     display:flex;
