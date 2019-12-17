@@ -723,6 +723,14 @@ body.section-show .transition-mask:before {
     transform: translateY(100%);
 }
 
+.front-person-titles>.t3 >a {
+color: #162935;
+}
+
+.front-person-titles>.t3:hover >a {
+  color: #B7A389;
+}
+
 .front-person-links {
     margin: auto;
     width: 500px;
