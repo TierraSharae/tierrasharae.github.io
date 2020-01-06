@@ -89,20 +89,20 @@
     <h5>a former <a href="https://tierrasharae.github.io/communication">journalist</a> who <a href="https://tierrasharae.github.io/design">designs</a> and <a href="https://tierrasharae.github.io/coding">codes</a>.</h5>
   </div>
 
-  <div class="container" style="width:60vw;">
+  <div class="container">
   <div class="row">
     <div class="col">
       <img class="tierra-headshot" src="img/tierra-headshot.jpg">
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-sm-4">
       <h2 style="text-align:center;"><br><a href="/pennstagram">DESIGN</a><br></h2>
     </div>
-    <div class="col">
+    <div class="col-sm-4">
       <h2 style="text-align:center"><br><a href="/communication">COMMUNICATION</a><br></h2>
     </div>
-    <div class="col">
+    <div class="col-sm-4">
       <h2 style="text-align:center"><br><a href="/coding">CODE</a><br></h2>
     </div>
   </div>
@@ -117,9 +117,32 @@
     <div class="col">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="mailto:tierra@alumni.upenn.edu">contact</a></div><br></h5>
     </div>
-    <div class="col">
-      <h5 style="text-align:center"><br><div class="sub-links"><a href="mailto:tierra@alumni.upenn.edu">+</a></div><br></h5>
+<div class="col">
+  <h5 style="text-align:center"><br>
+    <div class="sub-links"><a href="#" onclick="$('#hiddenText').show(); return false;"><i class="icon ion-plus-circled"></i></a>
+    <span style="display: none;" id="hiddenText">
+      <a href='https://github.com/TierraSharae' target="_blank">
+        <i class='ion-social-github'></i>
+      </a>
+      <a href='https://instagram.com/tierrabyte' target="_blank">
+        <i class='ion-social-instagram'></i>
+      </a>
+    </span>
     </div>
+  </h5>
+</div>
+
+
+
+    <!-- <div class="col-sm-auto">
+        <h5 style="text-align:center"><br><div class="sub-links"><a href='https://github.com/TierraSharae' target="_blank">
+            <i class='ion-social-github'></i>
+        </a></h5></div></div>
+<div class="col-sm-auto">
+      <h5 style="text-align:center"><a href='https://instagram.com/TierraSharae' target="_blank">
+          <i class='ion-social-instagram'></i>
+
+      </a></h5></div> -->
   </div>
 </div>
 
@@ -154,6 +177,15 @@ h2,h5{
 
 .tierra-headshot {
   box-shadow: 3px 2px 2px grey;
+}
+
+.container {
+  width:60%;
+}
+@media (max-width:992px) {
+  .container {
+    width: inherit;
+  }
 }
 
 </style>
