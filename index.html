@@ -22,6 +22,8 @@
     gtag('config', 'UA-146170969-1');
   </script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 
   <title>Tierra Sharae</title>
@@ -108,16 +110,31 @@
   </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col-sm-3">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="/about">about me</a></div><br></h5>
     </div>
-    <div class="col">
+    <div class="col-sm-3">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="/resume">resume</a></div><br></h5>
     </div>
-    <div class="col">
+    <div class="col-sm-3">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="mailto:tierra@alumni.upenn.edu">contact</a></div><br></h5>
     </div>
-<div class="col">
+
+    <div class="col-sm-3">
+      <h5><br><div class="sub-links">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#" class="clickme">+</a>
+      <span class="box">
+        <a href='https://github.com/TierraSharae' target="_blank">
+          <i class='ion-social-github'></i>
+        </a>
+        <a href='https://instagram.com/tierrabyte' target="_blank">
+          <i class='ion-social-instagram'></i>
+        </a>
+      </span>
+    </h5>
+  </div>
+    </div>
+<!-- <div class="col">
   <h5 style="text-align:center"><br>
     <div class="sub-links"><a href="#" onclick="$('#hiddenText').show(); return false;"><i class="icon ion-plus-circled"></i></a>
     <span style="display: none;" id="hiddenText">
@@ -130,7 +147,7 @@
     </span>
     </div>
   </h5>
-</div>
+</div> -->
 
 
 
@@ -145,6 +162,21 @@
       </a></h5></div> -->
   </div>
 </div>
+
+
+
+<script>
+var $clickme = $('.clickme'),
+    $box = $('.box');
+
+$box.hide();
+
+$clickme.click( function(e) {
+    $(this).text(($(this).text() === '-' ? '+' : '-')).next('.box').slideToggle();;
+    e.preventDefault();
+});
+
+</script>
 
 <style>
 
