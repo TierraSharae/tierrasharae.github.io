@@ -13,12 +13,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146170969-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-146170969-1');
   </script>
 
@@ -109,18 +107,11 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-sm-3">
+  <div class="sub-links-container">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="/about">about me</a></div><br></h5>
-    </div>
-    <div class="col-sm-3">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="/resume">résumé</a></div><br></h5>
-    </div>
-    <div class="col-sm-3">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="mailto:tierra@alumni.upenn.edu">contact</a></div><br></h5>
-    </div>
 
-    <div class="col-sm-3" id="social">
       <h5 style="text-align:center"><br><div class="sub-links">
       <a href="#" class="clickme" style="border:1px solid #000; padding: 0px 8px 0px 8px; border-radius:100%">+</a>
       <span class="box">
@@ -136,7 +127,6 @@
         </a>
       </div>
       </span>
-    </h5>
   </div>
     </div>
 <!-- <div class="col">
@@ -163,7 +153,6 @@
 <div class="col-sm-auto">
       <h5 style="text-align:center"><a href='https://instagram.com/TierraSharae' target="_blank">
           <i class='ion-social-instagram'></i>
-
       </a></h5></div> -->
   </div>
 </div>
@@ -173,31 +162,29 @@
 <script>
 var $clickme = $('.clickme'),
     $box = $('.box');
-
 $box.hide();
-
 $clickme.click( function(e) {
     $(this).text(($(this).text() === '-' ? '+' : '-')).next('.box').slideToggle();;
     e.preventDefault();
 });
-
 </script>
 
 <style>
 
+.sub-links-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /* #social {
   padding-left: 5vw;
 } */
-
 .sub-links >a {
 color: #162935;
 }
-
 .sub-links:hover >a {
   color: #B7A389;
 }
-
-
 h1,
 h3,
 h4,
@@ -211,15 +198,12 @@ h6,
     font-weight:lighter;
     font-family: Raleway, sans-serif;
 }
-
 h2,h5{
   font-weight: normal;
 }
-
 .tierra-headshot {
   box-shadow: 3px 2px 2px grey;
 }
-
 .container {
   width:60%;
 }
@@ -227,15 +211,17 @@ h2,h5{
   .container {
     width: inherit;
   }
-}
 
+  .sub-links {
+    flex: auto;
+  }
+}
 /* @media (max-width:992px) {
   #social {
     padding-left: inherit;
     text-align: center;
   }
 } */
-
 </style>
 
 
