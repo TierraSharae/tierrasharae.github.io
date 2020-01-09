@@ -2310,10 +2310,11 @@ body .symp-btn {
         left: auto !important;
         bottom: auto !important;
     }
-    .front-heading,
+
+    /* .front-heading,
     .front-heading-portfolio {
         margin-top: 80px;
-    }
+    } */
 }
 
 @media (max-width:768px) {
