@@ -137,8 +137,34 @@
         </a>
       </div>
       </span>
-  </div>
     </div>
+  </div>
+
+
+  <div class="mobile-sub-links-container">
+      <h5 style="text-align:center"><br><div class="sub-links"><a href="/about">about me</a></div><br></h5>
+      <h5 style="text-align:center"><br><div class="sub-links"><a href="/resume">résumé</a></div><br></h5>
+      <h5 style="text-align:center"><br><div class="sub-links"><a href="mailto:tierra@alumni.upenn.edu">contact</a></div><br></h5>
+
+      <h5 style="text-align:center"><br><div class="sub-links">
+      <!-- <a href="#" class="clickme" style="border:1px solid #000; padding: 0px 8px 0px 8px; border-radius:100%">+</a>
+      <span class="box"> -->
+        <div class="sub-links">
+        <a href='https://www.linkedin.com/in/tierrasharae/' target="_blank">
+          <i class='ion-social-linkedin'></i>
+        </a>
+        <a href='https://github.com/TierraSharae' target="_blank">
+          <i class='ion-social-github'></i>
+        </a>
+        <a href='https://instagram.com/tierrabyte' target="_blank">
+          <i class='ion-social-instagram'></i>
+        </a>
+      </div>
+      <!-- </span> -->
+    </div>
+  </div>
+
+
 
 
   </div>
@@ -237,6 +263,9 @@ nav a:focus {
   justify-content: space-between;
 }
 
+.mobile-sub-links-container {
+  display:none;
+}
 
 .sub-links >a {
 color: #162935;
@@ -283,6 +312,16 @@ h2,h5{
 
   .links-cntnr {
     flex-direction: column;
+  }
+
+  .sub-links-container {
+    display:none;
+  }
+
+  .mobile-sub-links-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 /* @media (max-width:992px) {
