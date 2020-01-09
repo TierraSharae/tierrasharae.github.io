@@ -95,7 +95,34 @@
       <img class="tierra-headshot" src="img/tierra-headshot.jpg">
     </div>
   </div>
+
+
   <div class="row">
+    <div class="col-sm-4">
+      <nav class="cl-effect-5"><br>
+          <h2 style="text-align:center"><a href="/pennstagram"><span data-hover="DESIGN">DESIGN</span></a></h2>
+        </nav>
+    </div>
+
+    <div class="col-sm-4">
+      <nav class="cl-effect-5"><br>
+          <h2 style="text-align:center"><a href="/communication"><span data-hover="COMMUNICATION">COMMUNICATION</span></a></h2>
+        </nav>
+    </div>
+
+    <div class="col-sm-4">
+      <nav class="cl-effect-5"><br>
+          <h2 style="text-align:center"><a href="/coding"><span data-hover="CODE">CODE</span></a></h2>
+        </nav>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- <div class="row">
     <div class="col-sm-4">
       <h2 style="text-align:center;"><br><a href="/pennstagram">DESIGN</a><br></h2>
     </div>
@@ -105,7 +132,7 @@
     <div class="col-sm-4">
       <h2 style="text-align:center"><br><a href="/coding">CODE</a><br></h2>
     </div>
-  </div>
+  </div> -->
 
   <div class="sub-links-container">
       <h5 style="text-align:center"><br><div class="sub-links"><a href="/about">about me</a></div><br></h5>
@@ -129,31 +156,8 @@
       </span>
   </div>
     </div>
-<!-- <div class="col">
-  <h5 style="text-align:center"><br>
-    <div class="sub-links"><a href="#" onclick="$('#hiddenText').show(); return false;"><i class="icon ion-plus-circled"></i></a>
-    <span style="display: none;" id="hiddenText">
-      <a href='https://github.com/TierraSharae' target="_blank">
-        <i class='ion-social-github'></i>
-      </a>
-      <a href='https://instagram.com/tierrabyte' target="_blank">
-        <i class='ion-social-instagram'></i>
-      </a>
-    </span>
-    </div>
-  </h5>
-</div> -->
 
 
-
-    <!-- <div class="col-sm-auto">
-        <h5 style="text-align:center"><br><div class="sub-links"><a href='https://github.com/TierraSharae' target="_blank">
-            <i class='ion-social-github'></i>
-        </a></h5></div></div>
-<div class="col-sm-auto">
-      <h5 style="text-align:center"><a href='https://instagram.com/TierraSharae' target="_blank">
-          <i class='ion-social-instagram'></i>
-      </a></h5></div> -->
   </div>
 </div>
 
@@ -168,6 +172,78 @@ $clickme.click( function(e) {
     e.preventDefault();
 });
 </script>
+
+
+<style>
+
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* body {
+	font-family: 'Raleway', sans-serif;
+} */
+
+nav a {
+	position: relative;
+	display: inline-block;
+	/* margin: 15px 25px; */
+	outline: none;
+	color: gray;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/* font-weight: 400; */
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	/* font-size: 1.35em; */
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/* Effect 5: same word slide in */
+.cl-effect-5 a {
+	overflow: hidden;
+	/* padding: 0 4px; */
+	/* height: 1.5em; */
+}
+
+.cl-effect-5 a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-5 a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+</style>
+
+
+
 
 <style>
 
