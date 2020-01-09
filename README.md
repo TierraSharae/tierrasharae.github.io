@@ -1,3 +1,3 @@
 # tierrasharae.github.io
 
-Original skeleton code by Noman Ali Samejo
+under construction as of 09 jan. 2020
