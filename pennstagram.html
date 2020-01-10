@@ -194,8 +194,7 @@
     </div>
 
     <p style="margin:20px 0 0 0;"><strong><span class="hdr">research insights and follow-up phase</span></strong><br>
-      one takeaway was that users want to be able to express their individuality
-      in more ways than just their photos. that is, they want more profile customizability,
+      one takeaway was that users want more profile customizability,
       as indicated by the high number of people who wished to add some version of easily-installable profile themes.
       to accommodate this, i drafted the following design solutions:<br>
       <div class="row">
@@ -323,11 +322,13 @@
         several participants noted difficulties navigating Instagram.
         during the second phase, i asked for specific interactions with the app
         that users found frustrating or confusing:</p>
-      &nbsp;&nbsp;&nbsp;&nbsp;- "there's a camera in the corner, and i always tap
-       it to make a new post, but it actually leads to the screen to create a new 'story.'"
-       <br>&nbsp;&nbsp;&nbsp;&nbsp;- "i don't have a specific example, but i
-       literally click random things until i find the setting i need. the settings are the most confusing."
-       <br>&nbsp;&nbsp;&nbsp;&nbsp;- "whenever i want to see posts i've liked, i have to Google how to do it." for context, it's under profile > settings > account > posts you've liked.
+       <!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;- "i don't have a specific example, but i
+       literally click random things until i find the setting i need. the settings are the most confusing." -->
+      <div class="cntr-wide">
+        <blockquote>there's a camera in the corner, and i always tap
+       it to make a new post, but it actually leads to the screen to create a new story.</blockquote>
+        <blockquote>whenever i want to see posts i've liked, i have to Google how to do it." </blockquote>for context, it's under profile > settings > account > posts you've liked.
+        </div>
 
       <p style="margin:10px 0 0 0;">while i did not want to focus too much on
         restructuring Instagram's existing settings, it was important to
@@ -437,6 +438,13 @@
           width: 50%;
         }
 
+        .cntr-wide {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 70%;
+        }
+
         /* #scroll:hover .layout-insights {
             display: block;
         } */
@@ -460,6 +468,46 @@
           }
 
         }
+
+
+        /* demo styles */
+
+        q,
+        blockquote {
+          quotes: "“" "”" "‘" "’";
+          font-style: italic;
+        }
+
+        .french {
+          quotes: "«" "»" "‹" "›";
+        }
+
+        q:before,
+        blockquote:before {
+          content: open-quote;
+        }
+
+        q:after,
+        blockquote:after {
+          content: close-quote;
+        }
+
+        q:before,
+        q:after,
+        blockquote:before,
+        blockquote:after {
+          color: #BA888B;
+          font-size: 1.2em;
+        }
+
+        blockquote {
+          margin-left: 0;
+          padding-left: 1em;
+          border-left: 5px solid #BA888B;
+        }
+
+
+
       </style>
 
 
