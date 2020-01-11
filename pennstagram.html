@@ -129,12 +129,36 @@
 
     <hr>
 
-    <p style="margin:10px 0 0 0;"><strong><span class="hdr">Summary and Goals</span></strong><br>
+    <p style="margin-top:10px;"><strong><span class="hdr">Summary and Goals</span></strong><br>
       <a href="https://www.Instagram.com/" target="_blank">Instagram</a> is one
       of today's largest photo- and video-sharing social networking applications. in my
       last semester as a master's candidate at the University of Pennsylvania
       (Penn), i created <em>Pennstagram</em> &mdash; a twist on the popular
       app &mdash; based on user research.</p>
+
+
+      <div class="row justify-content-center">
+        <div class="col">
+          <img src="img/pennstagram/story-previews.png" class="previews">
+          <div id="previews-caption">story previews</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/hdr-colors-previews.png" class="previews">
+          <div id="previews-caption">profile customizability</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/layout-previews.jpg" class="previews">
+          <div id="previews-caption">grid styles</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/repost-previews.png" class="previews">
+          <div id="previews-caption">repost photos</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/featured-previews.png" class="previews">
+          <div id="previews-caption">feature posts</div>
+        </div>
+      </div>
 
     <p style="margin:20px 0 0 0;"><strong><span class="hdr">User Needs and Research</span></strong><br>
       to better understand what features would make the best photo-sharing application,
@@ -465,6 +489,29 @@
           text-decoration: underline;
           text-decoration-color: #B6CCDB;
         }
+	      
+	      
+	 .previews {
+
+        clip-path:polygon(
+          /* X and Y points */
+          0 30%,
+          30% 0,
+          100% 0,
+          100% 70%,
+          70% 100%,
+          0 100%
+        );
+          border: 2px solid #B6CCDB;
+          /* margin:1px; */
+
+        }
+
+        #previews-caption{
+          color:gray;
+        }     
+	      
+	      
 
         @media (max-width:992px) {
           #holdphones {
