@@ -92,6 +92,10 @@ a:hover {
 
 }
 
+body {
+  font-size: 105%;
+}
+
 .customiced-gallery-row {
     display: flex;
     flex-wrap: wrap;
