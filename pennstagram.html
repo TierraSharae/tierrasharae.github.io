@@ -129,16 +129,39 @@
 
     <hr>
 
-    <p style="margin:10px 0 0 0;"><strong><span class="hdr">Summary and Goals</span></strong><br>
+    <p style="margin-top:10px;"><strong><span class="hdr">Summary and Goals</span></strong><br>
       <a href="https://www.Instagram.com/" target="_blank">Instagram</a> is one
       of today's largest photo- and video-sharing social networking applications. in my
       last semester as a master's candidate at the University of Pennsylvania
-      (Penn), i created <em>Pennstagram</em> &mdash; a twist on the popular
-      app &mdash; based on user research.</p>
+      (Penn), i created Pennstagram, which adds features to the popular app, guided by user research.</p>
+
+
+      <div class="row justify-content-center">
+        <div class="col">
+          <img src="img/pennstagram/story-previews.png" class="previews">
+          <div id="previews-caption">story previews</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/hdr-colors-previews.png" class="previews">
+          <div id="previews-caption">profile customizability</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/layout-previews.jpg" class="previews">
+          <div id="previews-caption">grid styles</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/repost-previews.png" class="previews">
+          <div id="previews-caption">repost photos</div>
+        </div>
+        <div class="col">
+          <img src="img/pennstagram/featured-previews.png" class="previews">
+          <div id="previews-caption">feature posts</div>
+        </div>
+      </div>
 
     <p style="margin:20px 0 0 0;"><strong><span class="hdr">User Needs and Research</span></strong><br>
-      to better understand what would make the best photo-sharing application,
-      i surveyed 58 people. the following is a sample of the data collected.</p>
+      to better understand what features would make the best photo-sharing application,
+      i surveyed 58 people. here is sample of the data collected:</p>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7">
@@ -150,7 +173,7 @@
               <br>- "i haven't made any posts, but i like seeing posts from friends."
               <br>- "it's the least political social network"
               <br>- "for makeup tutorials that aren't as long as on youtube"
-              <br>- "i started using it as a supplement to my fitness blog but now it's the main thing"
+              <br>- "initially as a supplement to my fitness blog but now it's the main thing"
               <br>- "i meet really interesting people through challenges like #100daysofcode"
 
             </div>
@@ -181,7 +204,7 @@
           <strong>how would you improve Instagram?</strong>
           <br>- better filters for images, so users can rely less on external apps like VSCO or Afterlight
           <br>- add easy-to-install profile themes (like Tumblr or MySpace)
-          <br>- have friends instead of followers (like Facebook)
+          <br>- have friends instead of followers
           <br>- allow reposts from certain users
           <br>- only allow posts to be made with the app's camera to reduce "FaceTuning" and to make Instagram truly "instant"
           <br>- add option to hide sponsored posts
@@ -197,18 +220,17 @@
       one takeaway was that users want more profile customizability,
       as indicated by the high number of people who wished to add some version of easily-installable profile themes.
       to accommodate this, i drafted the following design solutions:<br>
-      <div class="row">
-        <div class="col-sm-3" style="text-align:center;">multiple layout options for grid</div>
-        <div class="col-sm-3" style="text-align:center;">header image</div>
-        <div class="col-sm-2" style="text-align:center;">background color</div>
-        <div class="col-sm-4" style="text-align:center;">option to show/hide likes and followers</div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4">- multiple layout options for grid</div>
+        <div class="col-lg-4">- header image</div>
       </div>
-      <!-- when combining the first three solutions, user's can drastically change the look and feel of each
-      profile, and giving the option to toggle visibility like- and
-      follower-count keeps the focus on the multimedia while giving users control. -->
-      <p style="margin-top:10px; margin-bottom:0">i conducted a second phase of
-        research with 32 participants, who were asked to provide feedback and
-        rank the following grid styles based on the likelihood that they would use them on their profile:
+      <div class="row justify-content-center">
+        <div class="col-lg-4">- background color</div>
+        <div class="col-lg-4">- option to show/hide likes and followers</div>
+      </div>
+      <p style="margin-top:10px; margin-bottom:0">i conducted a second research phase
+         with 32 participants, who were asked to provide feedback and
+        rank the following grid styles:
         2-columns, 3-columns, 4-columns, featured squares, and scrapbook style.</p>
       <p style="margin-top:5px;">hover each artboard to view insights into the grid style.</p>
 
@@ -352,10 +374,10 @@
               <source src="img/pennstagram/demo-pennstagram.mp4" type="video/mp4">
           </div>
           <div class="col-lg-7">
-            <p>in summary, photo-sharing apps attract creatives. as such, users want
+            <p>in summary, users want
               to feel involved with the look and feel of their profiles. rather than
               using apps like Instagram as a one-size-fits-all platform, many are
-              beginning to use them as personal or business sites or mini-blogs &mdash; things that typically are highly customizable in their appearance.</p>
+              beginning to use them as personal or business sites or mini-blogs, which are typically highly customizable in their appearance.</p>
             <p>however, giving users too many options to customize could
               make them feel overwhelmed, and it may be better to restructure the flow of options presented to the user.
               in this case, restructuring felt more logical and did not reduce the number of options!
@@ -409,7 +431,7 @@
 
         .hdr {
           /* font-size: large; */
-          font-size: 135%;
+          font-size: 150%;
           /* margin-top: 20px; */
           border-left: 7.5px solid #D5F0DE;
           padding-left: .5em;
@@ -466,6 +488,29 @@
           text-decoration: underline;
           text-decoration-color: #B6CCDB;
         }
+	      
+	      
+	 .previews {
+
+        clip-path:polygon(
+          /* X and Y points */
+          0 30%,
+          30% 0,
+          100% 0,
+          100% 70%,
+          70% 100%,
+          0 100%
+        );
+          border: 2px solid #B6CCDB;
+          /* margin:1px; */
+
+        }
+
+        #previews-caption{
+          color:gray;
+        }     
+	      
+	      
 
         @media (max-width:992px) {
           #holdphones {
