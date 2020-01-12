@@ -114,7 +114,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="margin-top:0.5em;">
       <div class="col" style="text-align:center;">
         <ion-icon name="person"></ion-icon><strong>&nbsp;my role</strong><br> ux/ui designer
       </div>
@@ -149,8 +149,8 @@
       <ul>
         <li> Team size: 1</li>
         <li> Target audience: Instagram users, 18-35 year-olds</li>
-        <li> Number of participants:</li>
-        <li> Research methods:</li>
+        <li> Number of research participants: 83</li>
+        <li> Research methods: Interviews, surveys, questionnaires</li>
       </ul style="margin-bottom:0;">
 
 
@@ -181,66 +181,102 @@
       <div class="gap"></div>
 
 
-      <p>
         <strong>
           <h2 class="hdr">
             User Needs and Research
           </h2>
         </strong>
         <br>
-        To understand what features would make the best photo-sharing application,
-        I surveyed 58 people. Below is an interactive sample of the data collected:</p>
+        <p>To understand what features would make the best photo-sharing application,
+        I surveyed 58 people. Below is an interactive sample of the data collected.</p>
+
 
 
 
 
       <!-- Three columns -->
       <div class="row">
+
         <div class="col" id="stats" onclick="openTab('b1');">
-          <p style="font-size: 150%; text-align:center; margin:0 0 0 0;">Why do you use Instagram?</p>
+          <p style="font-size: 160%; text-align:center;"><br>Why do you use Instagram?</p>
+      </div>
+
+        <div class="col" id="stats" onclick="openTab('b2');">
+          On a scale of 1-7, how much do you like Instagram?<br><br>
+          <div class="progress" style="height: 22px;">
+            <div class="progress-bar" role="progressbar" style="width: 47.1%; background-color: gray;" aria-valuenow="3.3" aria-valuemin="0" aria-valuemax="7">3.3 </div>
+          </div><br>
+          <p style="text-align:right;"><em>average response</em></p>
         </div>
+
+        <div class="col" id="stats" onclick="openTab('b3');">
+          <p style="font-size: 160%; text-align:center;">"I wish Instagram had ______."</p>
+        </div>
+
+      </div>
+
+      <div class="row">
+
         <div class="col" id="stats" onclick="openTab('b2');">
           <p style="font-size: 300%; text-align:center; margin:0 0 0 0;">36%</p>
           <p style="text-align:center;">used the words "<blueu>theme</blueu>"
             or "<blueu>aesthetic</blueu>" when describing their posts or profile</p>
         </div>
-        <div class="col" id="stats" onclick="openTab('b3');">
-          <i class="fa fa-broom"></i>
-          <p style="font-size: 150%; text-align:center; margin:0 0 0 0;">"I wish <ion-icon name="logo-instagram"></ion-icon> had ___."</p>
 
-        </div>
-        <!-- </div> -->
-        <!-- <div class="row"> -->
-        <div class="col" id="stats" onclick="openTab('b2');">
-          On a scale of 1-7, how much do you like Instagram?<br><br>
-          <div class="progress" style="height: 25px;">
-            <div class="progress-bar" role="progressbar" style="width: 47.1%; background-color: gray;" aria-valuenow="3.3" aria-valuemin="0" aria-valuemax="7">3.3 </div>
-          </div><br>
-          <p style="text-align:right;"><em>average response</em></p>
-        </div>
-        <div class="col" id="stats" onclick="openTab('b3');">
+        <div class="col" id="stats" onclick="openTab('b5');">
           <p style="font-size: 300%; text-align:center; margin:0 0 0 0;">52%</p>
           <p style="text-align:center;">said they have considered <blueu>deleting</blueu> the app in the past 12 months</p>
         </div>
+
       </div>
 
       <!-- Full-width columns: (hidden by default) -->
       <div id="b1" class="containerTab" style="display:none;background:green">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
         <h2>Why do you use Instagram?</h2>
-        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+        <ul>
+          <li>"I embroider clothes and sell artwork. Instagram helps my business a lot."</li>
+          <li> "Mostly for travel ideas"</li>
+          <li> "I haven't made any posts, but I like seeing posts from friends."</li>
+          <li> "It's the least political social network."</li>
+          <li> "For makeup tutorials that aren't as long as on YouTube."</li>
+          <li> "Initially as a supplement to my fitness blog, but now it's the main thing."</li>
+          <li> "I meet really interesting people through challenges like #100daysofcode."</li>
+        </ul>
       </div>
 
       <div id="b2" class="containerTab" style="display:none;background:blue">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <h2>Box 2</h2>
-        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+        <h4>On a scale of 1-7, how much do you like Instagram?</h4>
+        <p>No participants chose 7, the most favorable rating.</p>
       </div>
 
       <div id="b3" class="containerTab" style="display:none;background:red">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <h2>Box 3</h2>
-        <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+        <h2>I wish Instagram had ______.</h2>
+        <ul>
+          <li> better filters for images, so users can rely less on external apps like VSCO or Afterlight</li>
+          <li> easy-to-install profile themes (like Tumblr or MySpace)</li>
+          <li> friends instead of followers</li>
+          <li> the ability to repost from certain users</li>
+          <li> only the option to post using the app's camera to reduce "FaceTuning" and make Instagram truly "instant"</li>
+          <li> an option to hide sponsored posts</li>
+          <li> clickable links
+          <li> more straightforward navigation menus</li>
+          <li> wider aspect ratios to support panoramas</li>
+        </ul>
+      </div>
+
+      <div id="b5" class="containerTab" style="display:none;background:blue">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h5>Common reasons for wanting to delete Instagram include:</h5>
+        <p>
+        <ol>
+          <li>It wastes time or is a distraction.</li>
+          <li>It leads to unhealthy social comparisons.</li>
+          <li>It's simply less fun/interesting than before.</li>
+        </ol>
+      </p>
       </div>
 
       <script>
@@ -290,6 +326,11 @@
           border: 1.5px solid #B6CCDB;
           border-radius: 5px;
           margin: 1.5px;
+        }
+
+        #stats:hover {
+          background-color: #B6CCDB;
+          color:white;
         }
       </style>
 
@@ -401,20 +442,20 @@
         <img id="scroll" src="img/pennstagram/ncol.gif">
         <br>
         <div class="layout-insights">
-          <img src="img/pennstagram/ncol-insights.png">
-          <!-- derived from Instagram's classic 3-column grid, this layout style also has options for two and four columns.
-              users who ranked the 4-column grid as their favorite were asked if they would use five or more columns. all respondents said "no."
+          <!-- <img src="img/pennstagram/ncol-insights.png"> -->
+          Derived from Instagram's classic 3-column grid, this layout style also has options for two and four columns.
+              Users who ranked the 4-column grid as their favorite were asked if they would use five or more columns. All respondents said "no."
               <hr>
               <p style="text-align:center;"> quotes from users:</p>
-              "i like the dual columns because the posts are extra big."
+              "I like the dual columns because the posts are extra big."
               <br><br>
-              "i would never change from the 3-column layout since it would mess up my 'theme'"
+              "I would never change from the 3-column layout since it would mess up my 'theme'"
               <br><br>
-              "i always wondered why everything was in 3's but now i see that nothing else looks quite right."
+              "I always wondered why everything was in 3's but now i see that nothing else looks quite right."
               <br><br>
-              "the 4-column option shows more pics at once"
+              "The 4-column option shows more pics at once"
               <br><br>
-              <em>overall user rankings</em>: #2 of 5 (3-column), #4 of 5 (4-column), #5 of 5 (2-column) -->
+              <em>Overall user rankings</em>: #2 of 5 (3-column), #4 of 5 (4-column), #5 of 5 (2-column)
         </div>
       </div>
 
@@ -425,12 +466,12 @@
         <br>
 
         <div class="layout-insights">
-          <img src="img/pennstagram/featured-insights.png">
+          <!-- <img src="img/pennstagram/featured-insights.png"> -->
 
-          <!-- <div class="row">
+          <div class="row">
                 <div class="col">
-                  on Instagram, users often crop a single image into several smaller
-                  ones to create the look of a featured image. the "featured squares"
+                  On Instagram, users often crop a single image into several smaller
+                  ones to create the look of a featured image. The "featured squares"
                   layout option aims to provide a more elegant solution.
                 </div>
                 <div class="col">
@@ -440,13 +481,13 @@
 
               <hr>
               <p style="text-align:center;"> quotes from users:</p>
-              "i would use this to post progress pictures of my embroidery in the
-              small squares, then the finished version i'm selling in the big ones."
+              "I would use this to post progress pictures of my embroidery in the
+              small squares, then the finished version I'm selling in the big ones."
               <br><br>
-              "this is a nice balance between the normal squares layout (too boring)
+              "This is a nice balance between the normal squares layout (too boring)
               and the scrapbook layout (too messy)."
               <br><br>
-              <em>overall user ranking</em>: #3 of 5<br>(nearly a tie for #2) -->
+              <em>Overall user ranking</em>: #3 of 5<br>(nearly a tie for #2)
 
         </div>
 
@@ -459,25 +500,25 @@
         <br>
 
         <div class="layout-insights">
-          <img src="img/pennstagram/scrapbook-insights.png">
+          <!-- <img src="img/pennstagram/scrapbook-insights.png"> -->
 
-          <!-- this layout option strays from the use of 1:1 thumbnails and
+          This layout option strays from the use of 1:1 thumbnails and
               keeps all images on the grid in their original aspect ratios.
 
               <hr>
               <p style="text-align:center;"> quotes from users:</p>
 
-              "i've always disliked the squares because sometimes, my favorite
+              "I've always disliked the squares because sometimes, my favorite
               part of the picture isn't in the center, so you can't see it in the thumbnail."
               <br><br>
               "Instagram without squares feels a little strange to me, but i could probably get used to it."
               <br><br>
-              "it looks more organic. i love it!"
+              "It looks more organic. i love it!"
               <br><br>
-              "i think it's too messy/disorganized for my OCD but i can see how others would like it.
-              i just prefer things that are more uniform."
+              "I think it's too messy/disorganized for my OCD but i can see how others would like it.
+              I just prefer things that are more uniform."
               <br><br>
-              <em>overall user ranking</em>: #1 of 5 -->
+              <em>Overall user ranking</em>: #1 of 5
 
         </div>
       </div>
@@ -580,7 +621,7 @@
         <h2 class="hdr">What I Learned</h2>
       </strong><br>
       <p>Users want
-        to feel involved with the look and feel of their profiles. rather than
+        to feel involved with the look and feel of their profiles. Rather than
         using apps like Instagram as a one-size-fits-all platform, many are
         beginning to use them as personal or business sites or mini-blogs, which are typically highly customizable in their appearance.</p>
       <p>However, giving users too many options to customize could
@@ -642,6 +683,9 @@
       red and blue are Penn's colors. go, Quakers!
 
     </div>
+
+    <hr>
+
   </div>
 
 
@@ -665,7 +709,7 @@
     }
 
     .gap {
-      height: 70px;
+      height: 75px;
     }
 
     .gap-smaller {
@@ -843,10 +887,6 @@
   <!--/preloader-->
 
 
-
-  </section>
-
-  <hr>
 
   <!-- <div class='footer bg-lightgray section-block'> -->
 
