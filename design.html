@@ -8,7 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-  <title>Pennstagram - Design</title>
+  <title>Design</title>
 
   <!--[if lt IE 9]>
 		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -93,75 +93,243 @@
 
 
 
-  <div class="container">
-    <!-- <div class="row"> -->
-    <!-- <div class="col" style="background-color:gainsboro;"> -->
-    <h1 style="margin:10px 0 0 0;">Pennstagram</h1>
-    <span style="text-transform: uppercase;"> instagram feature integration</span>
-    <hr>
+  <!-- <div class="row"> -->
+  <!-- <div class="col" style="background-color:gainsboro;"> -->
+  <!-- <div class= "heading-container">
+  <h1 style="margin:10px 0 0 0;">Tierra Sharae</h1>
+  <h1 style="margin:10px 0 0 0; text-align:right;">Design</h1>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/pennstagram/hdr-blue.gif" alt="Pennstagram">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/pennstagram/hdr-green.gif" alt="Pennstagram">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/pennstagram/hdr-pink.png" alt="Pennstagram">
-        </div>
-      </div>
     </div>
 
+    <hr style="width:75%;">
 
-    <center><br><h2>Hi there! I got a great first-round of critques on my Pennstagram case study.<br>It's currently under construction. Check back soon!</h2></center>
-
-
-
-      <style>
-        .hdr {
-          /* font-size: large; */
-          font-size: 130%;
-
-        }
-
-        .col-sm>img {
-          border: 2px solid #000;
-          border-radius: 10px;
-        }
-
-        #layouts p {
-          display: none;
-        }
-
-        #layouts:hover img {
-          display: none;
-        }
-
-        #layouts:hover p {
-          display: initial;
-        }
-
-        #holdphones {
-          width: 70vw;
-        }
-
-        @media (max-width:992px) {
-          #holdphones {
-            width: 98vw;
-          }
-        }
-      </style>
+    <div class="container">
 
 
-      <!-- <div class="row">
+      As a former journalist who has conducted countless interviews and had the
+      honor of telling hundred's of people's stories, I understand the value of
+
+    </div> -->
+
+
+  <div class="box">
+    <div class="container" style="width:50%;">
+
+      <!-- <div class="row justify-content-center">
+        <div class="col">
+          <img src="img/design/customiced.jpg">
+          <h6 style="text-align:center;">Instagram Feature Integration</h6>
+          <div class="tag">UX/UI</div>
+
+
+        </div>
+        <div class="col">
+          <img src="img/design/customiced.jpg">
+          <h6 style="text-align:center;"></h6>
+          <div class="tag">Product</div>
+
+        </div>
+      </div> -->
+      <div class="row">
+
+        <div class="col">
+          <div class="card" style="width: 19rem;">
+            <div class="image02">
+
+            <a href="/pennstagram"><img src="img/design/Rotato Snapshot.png" class="card-img-top" alt="Pennstagram"></a>
+            </div>
+            <!-- <div class="middle">
+              <div class="text">+</div>
+        </div> -->
+            <div class="card-body">
+              <h5 class="card-title">PENNSTAGRAM</h5>
+              <p class="card-text">Instagram feature integration</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <div class="tag">UX/UI</div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+
+        <div class="card" style="width: 19rem;">
+          <div class="image02">
+
+          <a href="/customiced.html"><img src="img/design/customiced.jpg" class="card-img-top image" alt="..."></a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CUSTOMICED</h5>
+            <p class="card-text">Mass customization computer mouse</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <div class="tag">Product</div>
+
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- <div class="image02">
+                              <img src="http://lorempixel.com/350/263/" alt="">
+                              <div class="buttons">
+                                  <a href="#" class="fa fa-link"></a>
+                                  <a href="#" class="fa fa-search"></a>
+                              </div>
+                          </div> -->
+
+                      <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+
+
+.image02:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+
+
+
+
+
+    /* tags */
+    tags {
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .tags li {
+      float: left;
+    }
+
+    .tag {
+      background: #eee;
+      border-radius: 3px 0 0 3px;
+      color: #999;
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 20px 0 23px;
+      position: relative;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      -webkit-transition: color 0.2s;
+    }
+
+    .tag::before {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+      content: '';
+      height: 6px;
+      left: 10px;
+      position: absolute;
+      width: 6px;
+      top: 10px;
+    }
+
+    .tag::after {
+      background: #fff;
+      border-bottom: 13px solid transparent;
+      border-left: 10px solid #eee;
+      border-top: 13px solid transparent;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .tag:hover {
+      background-color: gray;
+      color: white;
+    }
+
+    .tag:hover::after {
+      border-left-color: gray;
+    }
+
+
+
+
+
+
+
+    .box {
+      display: flex;
+      height: 90vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .heading-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+
+
+    .hdr {
+      /* font-size: large; */
+      font-size: 130%;
+
+    }
+
+    .col-sm>img {
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+
+    #layouts p {
+      display: none;
+    }
+
+    #layouts:hover img {
+      display: none;
+    }
+
+    #layouts:hover p {
+      display: initial;
+    }
+
+    #holdphones {
+      width: 70vw;
+    }
+
+    @media (max-width:992px) {
+      #holdphones {
+        width: 98vw;
+      }
+    }
+  </style>
+
+
+  <!-- <div class="row">
       <span style="text-transform: uppercase; text-align:center;">research and user needs</span>
     </div> -->
 
-      <!-- </div> -->
-      <!-- </div> -->
-  </div>
+  <!-- </div> -->
+  <!-- </div> -->
 
 
   <!--preloader-->
@@ -176,49 +344,12 @@
 
 
 
-  </section>
-
-
-  <div class='footer bg-lightgray section-block'>
-
-    <div class='container'>
-
-      <div class='row'>
-
-        <div class='col-xs-6 text-left'>
-          <h4>Tierra Sharae</h4>
-        </div>
-
-        <div class='col-xs-6 text-right'>
-          <ul class='footer-social'>
-            <li>
-              <a href='https://www.linkedin.com/in/tierrasharae/' target="_blank">
-                <i class='ion-social-linkedin'></i>
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/TierraSharae' target="_blank">
-                <i class='ion-social-github'></i>
-              </a>
-            </li>
-            <li>
-              <a href='https://muckrack.com/tierrasharae' target="_blank">
-                <i class='ion-ios-paper'></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
 
 
 
-  </div>
+
+
+
 
   <script src='js/jquery.min.js'></script>
   <script src='js/jquery.stellar.min.js'></script>
