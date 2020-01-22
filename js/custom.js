@@ -20,19 +20,19 @@ $(document).ready(function () {
         return false;
     });
     //On Click Open Menu Items
-    $('.tv-menu-block, .menu-item').on('click', function () {
-        $('.intro-block').addClass('reverse');
-        $('.intro-block-container').addClass('reverse');
-        $('.tv-menu-blocks').addClass('hidex');
-        $('.tv-top-fix-menu').addClass('showx');
-    });
+    // $('.tv-menu-block, .menu-item').on('click', function () {
+    //     $('.intro-block').addClass('reverse');
+    //     $('.intro-block-container').addClass('reverse');
+    //     $('.tv-menu-blocks').addClass('hidex');
+    //     $('.tv-top-fix-menu').addClass('showx');
+    // });
     //On Click Open About/Resume Block
-    $('.about-block, .menu-item.about').on('click', function () {
-        $('.content-blocks').removeClass('showx');
-        $('.content-blocks.about').addClass('showx');
-        $('.menu-item').removeClass('active');
-        $('.menu-item.about').addClass('active');
-    });
+    // $('.about-block, .menu-item.about').on('click', function () {
+    //     $('.content-blocks').removeClass('showx');
+    //     $('.content-blocks.about').addClass('showx');
+    //     $('.menu-item').removeClass('active');
+    //     $('.menu-item.about').addClass('active');
+    // });
     //On Click Open Portfolio Block
     $('.portfolio-block, .menu-item.portfolio').on('click', function () {
         $('.content-blocks').removeClass('showx');
