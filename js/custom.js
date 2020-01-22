@@ -21,11 +21,16 @@ $(document).ready(function () {
     });
     //On Click Open Menu Items
     // $('.tv-menu-block, .menu-item').on('click', function () {
-    $('.about-block, .menu-item.about').on('click', function () {
+    $('.ab').on('click', function () {
         $('.intro-block').addClass('reverse');
         $('.intro-block-container').addClass('reverse');
         $('.tv-menu-blocks').addClass('hidex');
         $('.tv-top-fix-menu').addClass('showx');
+
+        $('.content-blocks').removeClass('showx');
+        $('.content-blocks.about').addClass('showx');
+        $('.menu-item').removeClass('active');
+        $('.menu-item.about').addClass('active');
     });
     //On Click Open About/Resume Block
     // $('.about-block, .menu-item.about').on('click', function () {
