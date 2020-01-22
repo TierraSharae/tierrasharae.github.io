@@ -117,6 +117,12 @@ iframe {
     max-width: 100%;
 }
 /*main home page*/
+
+/* .tv-home.tv-bg-img {
+  background: transparent url('../img/tierra-bg.jpg') repeat 0 0 / cover;
+  } */
+
+
 .tv-home {
     /*background-size: cover;*/
     height: 100vh;
