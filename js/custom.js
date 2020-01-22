@@ -56,7 +56,7 @@ $(document).ready(function () {
         $('.menu-item.contact').addClass('active');
     });
 
-    //On Click Close Blocks
+    // On Click Close Blocks
     $('#close').on('click', function () {
         $('.intro-block').removeClass('reverse');
         $('.intro-block-container').removeClass('reverse');
@@ -120,7 +120,7 @@ $(document).ready(function () {
 function typer() {
     var win = $(window),
             foo = $('#typer');
-    foo.typer(['<h2><span class="text-color-1">Frontend</span> Developer</h2>', '<h2>UI/UX <span class="text-color-1">Designer</span></h2>', '<h2><span class="text-color-1">Journ</span>alist</h2>']);
+    foo.typer(['<h2><span class="text-color-1">Frontend</span> Developer</h2>', '<h2><span class="text-color-1">UI/UX </span>Designer</h2>', '<h2><span class="text-color-1">Journ</span>alist</h2>']);
 }
 
 
