@@ -9,7 +9,7 @@ License URI: http://www.themevault.net/license/
 /* Landscape phones and smaller */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .contact-block {
+    .contact-block, .about-block {
         left: 365px;
         top: 500px;
         transform: rotate(-34deg);
@@ -38,7 +38,7 @@ License URI: http://www.themevault.net/license/
         padding: 0;
         transform: rotate(0deg);
     }
-    .contact-block {
+    .contact-block, .about-block {
         background: transparent;
     }
     .intro-block {
@@ -95,7 +95,7 @@ License URI: http://www.themevault.net/license/
         font-size: 22px;
         margin: 10px 20px 40px;
     }
-    .contact-block {
+    .contact-block, .about-block {
         border: none;
     }
 }
