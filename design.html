@@ -90,9 +90,6 @@
     </div>
   </nav>
 
-
-
-
   <!-- <div class="row"> -->
   <!-- <div class="col" style="background-color:gainsboro;"> -->
   <!-- <div class= "heading-container">
@@ -112,6 +109,7 @@
     </div> -->
 
 
+<div class="gap"></div>
   <!-- <div class="box"> -->
     <div class="container">
 
@@ -132,23 +130,41 @@
 
       <div class="row justify-content-center">
 
-        <div class="col">
+        <div class="col-lg-4">
+          <div class="card">
+
+            <!-- <a href="/pennstagram"> -->
+              <div class="image02">
+                <img src="img/design/ellenahc.png" class="card-img-top" alt="Pennstagram">
+            <!-- </a> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">ELLEN AHC</h5>
+            <p class="card-text">E-commerce website for handmade jewelry</p>
+            <div class="tag">UI/UX</div> Coming very soon!
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-4">
           <div class="card">
 
             <a href="/pennstagram">
               <div class="image02">
-                <img src="img/design/Rotato Snapshot.png" class="card-img-top" alt="Pennstagram">
+                <img src="img/design/pennstagram.png" class="card-img-top" alt="Pennstagram">
             </a>
           </div>
           <div class="card-body">
             <h5 class="card-title">PENNSTAGRAM</h5>
             <p class="card-text">Instagram feature integration</p>
-            <div class="tag">UX/UI</div>
+            <div class="tag">UI/UX</div>
           </div>
         </div>
       </div>
 
-      <div class="col">
+      <div class="col-lg-4">
 
         <div class="card">
           <a href="/customiced.html">
@@ -199,6 +215,9 @@
     }
 
 
+    .gap{
+      height:100px;
+    }
 
 
 
@@ -313,6 +332,10 @@
     @media (max-width:992px) {
       #holdphones {
         width: 98vw;
+      }
+
+      .gap {
+        display: none;
       }
     }
   </style>
