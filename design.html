@@ -241,7 +241,7 @@
 
     .tag {
       background: #eee;
-      border-radius: 3px 0 0 3px;
+      border-radius: 3px;
       color: #999;
       display: inline-block;
       height: 26px;
@@ -265,25 +265,13 @@
       top: 10px;
     }
 
-    .tag::after {
-      background: #fff;
-      border-bottom: 13px solid transparent;
-      border-left: 10px solid #eee;
-      border-top: 13px solid transparent;
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
 
     .tag:hover {
       background-color: gray;
       color: white;
     }
 
-    .tag:hover::after {
-      border-left-color: gray;
-    }
+
 
 
 
