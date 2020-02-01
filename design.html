@@ -110,12 +110,18 @@
 
 
   <!-- <div class="box"> -->
+
+
   <div class="container">
     <h5 style="text-align: center;"><br>Hi! I'm Tierra, a Philadelphia-based UI/UX designer.</h5>
     <h6 style="text-align: center; color:gray;">As a former journalist with degrees in Communication and Computer Science, <br>I research and listen intently to design with everyone in mind, from the user to the developer.</h6>
 
 
     <div class="gap"></div>
+
+
+
+
 
 
 
@@ -140,10 +146,8 @@
         <div class="card">
 
           <!-- <a href="/pennstagram"> -->
-          <div class="image02">
-            <img src="img/design/ellenahc.png" class="card-img-top" alt="Pennstagram">
+          <img src="img/design/ellenahc.png" onmouseover="this.src='img/design/ellenahc-hover.gif'" onmouseout="this.src='img/design/ellenahc.png'" />
             <!-- </a> -->
-          </div>
           <div class="card-body">
             <h5 class="card-title">ELLEN AHC</h5>
             <p class="card-text">E-commerce website for handmade jewelry</p>
@@ -160,10 +164,8 @@
         <div class="card">
 
           <a href="/pennstagram">
-          <div class="image02">
-            <img src="img/design/pennstagram.png" class="card-img-top" alt="Pennstagram">
+            <img src="img/design/pennstagram.png" onmouseover="this.src='img/design/pennstagram-hover.gif'" onmouseout="this.src='img/design/pennstagram.png'" />
             </a>
-          </div>
           <div class="card-body">
             <h5 class="card-title">PENNSTAGRAM</h5>
             <p class="card-text">Instagram feature integration</p>
@@ -212,13 +214,6 @@
 
 
 
-
-
-
-
-
-
-
   <style>
     .image02:hover img {
       -webkit-filter: grayscale(100%);
@@ -229,8 +224,6 @@
     .gap {
       height: 10vh;
     }
-
-
 
 
 
@@ -380,6 +373,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script>
+  function swap(newImg){
+    this.src = newImg;
+  }
+  </script>
 
 </body>
 
