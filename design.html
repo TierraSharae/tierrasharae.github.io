@@ -51,6 +51,28 @@
   <!-- ****** faviconit favicons ****** -->
 
 
+  <div class="hidden">
+  	<script type="text/javascript">
+  		<!--//--><![CDATA[//><!--
+  			var images = new Array()
+  			function preload() {
+  				for (i = 0; i < preload.arguments.length; i++) {
+  					images[i] = new Image()
+  					images[i].src = preload.arguments[i]
+  				}
+  			}
+  			preload(
+  				"img/design/pennstagram-hover.gif",
+  				"img/design/ellenahc-hover.gif"
+          // ,
+  				// "http://domain.tld/gallery/image-003.jpg"
+  			)
+  		//--><!]]>
+  	</script>
+  </div>
+
+
+
 </head>
 
 <body>
@@ -342,13 +364,13 @@
 
 
   <!--preloader-->
-  <div id='preloader'>
+  <!-- <div id='preloader'>
 
         <div class='loader'>
             <img src='img/load.gif' alt='symp'>
         </div>
 
-    </div>
+    </div> -->
   <!--/preloader-->
 
 
