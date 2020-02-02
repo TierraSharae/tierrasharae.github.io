@@ -50,9 +50,172 @@
   <meta name="msapplication-config" content="/img/browserconfig.xml">
   <!-- ****** faviconit favicons ****** -->
 
+
+
+  <style>
+    .image02:hover img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+
+    .gap {
+      height: 10vh;
+    }
+
+
+
+    /* tags */
+    tags {
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .tags li {
+      float: left;
+    }
+
+    .tag {
+      background: #eee;
+      border-radius: 3px;
+      color: #999;
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 20px 0 23px;
+      position: relative;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      -webkit-transition: color 0.2s;
+    }
+
+    .tag::before {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+      content: '';
+      height: 6px;
+      left: 10px;
+      position: absolute;
+      width: 6px;
+      top: 10px;
+    }
+
+
+    .tag:hover {
+      background-color: gray;
+      color: white;
+    }
+
+    .box {
+      display: flex;
+      height: 80vh;
+      align-items: center;
+      justify-content: center;
+      /* background-color: red; */
+    }
+
+    .heading-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+
+
+    .hdr {
+      /* font-size: large; */
+      font-size: 130%;
+
+    }
+
+    .col-sm>img {
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+
+    #layouts p {
+      display: none;
+    }
+
+    #layouts:hover img {
+      display: none;
+    }
+
+    #layouts:hover p {
+      display: initial;
+    }
+
+    #holdphones {
+      width: 70vw;
+    }
+
+    @media (max-width:992px) {
+      #holdphones {
+        width: 98vw;
+      }
+
+      .gap {
+        display: none;
+      }
+    }
+
+    .js #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #FFF;
+        z-index: 199;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    .js #preloader .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .js body.loaded #preloader {
+        -webkit-transform: scale(.6) translateY(-100%);
+        -moz-transform: scale(.6) translateY(-100%);
+        -ms-transform: scale(.6) translateY(-100%);
+        -o-transform: scale(.6) translateY(-100%);
+        transform: scale(.6) translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    .no-js #preloader {
+        display: none;
+    }
+  </style>
+
+
 </head>
 
 <body>
+
+  <!--preloader-->
+  <div id='preloader'>
+
+        <div class='loader'>
+            <img src='img/load.gif' alt='loading'>
+        </div>
+
+    </div>
+  <!--/preloader-->
+
   <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="/">tierra sharae</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -202,172 +365,24 @@
   <img src="img/design/ellenahc-hover.gif" width="0" height="0">
   <img src="img/design/pennstagram-hover.gif" width="0" height="0">
 
-  <!-- </div> -->
 
 
 
 
-  <!-- <div class="image02">
-                              <img src="http://lorempixel.com/350/263/" alt="">
-                              <div class="buttons">
-                                  <a href="#" class="fa fa-link"></a>
-                                  <a href="#" class="fa fa-search"></a>
-                              </div>
-                          </div> -->
-
-  <!-- </div> -->
-
-
-
-  <style>
-    .image02:hover img {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-    }
-
-
-    .gap {
-      height: 10vh;
-    }
-
-
-
-    /* tags */
-    tags {
-      list-style: none;
-      margin: 0;
-      overflow: hidden;
-      padding: 0;
-    }
-
-    .tags li {
-      float: left;
-    }
-
-    .tag {
-      background: #eee;
-      border-radius: 3px;
-      color: #999;
-      display: inline-block;
-      height: 26px;
-      line-height: 26px;
-      padding: 0 20px 0 23px;
-      position: relative;
-      margin: 0 10px 10px 0;
-      text-decoration: none;
-      -webkit-transition: color 0.2s;
-    }
-
-    .tag::before {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-      content: '';
-      height: 6px;
-      left: 10px;
-      position: absolute;
-      width: 6px;
-      top: 10px;
-    }
-
-
-    .tag:hover {
-      background-color: gray;
-      color: white;
-    }
-
-
-
-
-
-
-
-
-
-    .box {
-      display: flex;
-      height: 80vh;
-      align-items: center;
-      justify-content: center;
-      /* background-color: red; */
-    }
-
-    .heading-container {
-      display: flex;
-      justify-content: space-around;
-    }
-
-
-
-    .hdr {
-      /* font-size: large; */
-      font-size: 130%;
-
-    }
-
-    .col-sm>img {
-      border: 2px solid #000;
-      border-radius: 10px;
-    }
-
-    #layouts p {
-      display: none;
-    }
-
-    #layouts:hover img {
-      display: none;
-    }
-
-    #layouts:hover p {
-      display: initial;
-    }
-
-    #holdphones {
-      width: 70vw;
-    }
-
-    @media (max-width:992px) {
-      #holdphones {
-        width: 98vw;
-      }
-
-      .gap {
-        display: none;
-      }
-    }
-  </style>
-
-
-  <!-- <div class="row">
-      <span style="text-transform: uppercase; text-align:center;">research and user needs</span>
-    </div> -->
-
-  <!-- </div> -->
-  <!-- </div> -->
-
-
-  <!--preloader-->
-  <div id='preloader'>
-
-        <div class='loader'>
-            <img src='img/load.gif' alt='symp'>
-        </div>
-
-    </div>
-  <!--/preloader-->
-
-
-  <!-- <script src='old/js/jquery.min.js'></script>
+  <script src='old/js/jquery.min.js'></script>
   <script src='old/js/jquery.stellar.min.js'></script>
   <script src='old/js/modernizr.js'></script>
   <script src='old/js/owl.carousel.min.js'></script>
   <script src='old/js/jquery.shuffle.min.js'></script>
   <script src='old/js/jquery.magnific-popup.min.js'></script>
   <script src='old/js/validator.min.js'></script>
-  <script src='old/js/smoothscroll.js'></script>
-  <script src='old/js/script.js'></script> -->
+  <!-- <script src='old/js/smoothscroll.js'></script> -->
+  <script src='old/js/script.js'></script>
+
+
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
