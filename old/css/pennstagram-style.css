@@ -72,12 +72,12 @@
 }
 
 
-.footer-container a {
+.footer-container a, .container > .footer-container a {
   color: #959595;
   text-decoration: none;
 }
 
-.footer-container a:hover {
+.footer-container a:hover, .container > .footer-container a:hover {
   color: #B7A389;
 }
 
