@@ -1,31 +1,31 @@
 <!DOCTYPE html>
+<html class='no-js'>
 
 <head>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-  <link rel='stylesheet' type='text/css' href='old/bootstrap/css/bootstrap.min.css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+  <title>Design</title>
+
+  <!--[if lt IE 9]>
+		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+  <!-- <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css'> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel='stylesheet' type='text/css' href='old/css/ionicons.min.css'>
-<!--
-  <link rel='stylesheet' type='text/css' href='css/owl.carousel.css'>
-  <link rel='stylesheet' type='text/css' href='css/owl.theme.css'>
-  <link rel='stylesheet' type='text/css' href='css/owl.transitions.css'>
-  <link rel='stylesheet' type='text/css' href='css/magnific-popup.css'> -->
-  <link rel='stylesheet' type='text/css' href='old/css/style.css'>
-  <!-- <link rel='stylesheet' type='text/css' href='css/color-default.css'> -->
-  <title>Programming Projects</title>
 
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146170969-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-146170969-1');
-  </script>
+  <link rel='stylesheet' type='text/css' href='old/css/owl.carousel.css'>
+  <link rel='stylesheet' type='text/css' href='old/css/owl.theme.css'>
+  <link rel='stylesheet' type='text/css' href='old/css/owl.transitions.css'>
+  <link rel='stylesheet' type='text/css' href='old/css/magnific-popup.css'>
+  <link rel='stylesheet' type='text/css' href='old/css/comm-style.css'>
+  <link rel='stylesheet' type='text/css' href='old/css/color-default.css'>
 
   <!-- ****** faviconit favicons ****** -->
   <link rel="shortcut icon" href="/favicon.ico">
@@ -50,189 +50,381 @@
   <meta name="msapplication-config" content="/img/browserconfig.xml">
   <!-- ****** faviconit favicons ****** -->
 
-  <meta name="google-site-verification" content="I1tC7PAssQK_vOihpyZanLh_aJwiLn1njj85nZGHnfo">
+
+
+  <style>
+    .image02:hover img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+
+    .gap {
+      height: 10vh;
+    }
+
+
+
+    /* tags */
+    tags {
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .tags li {
+      float: left;
+    }
+
+    .tag {
+      background: #eee;
+      border-radius: 3px;
+      color: #999;
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 7px 0 7px;
+      position: relative;
+      margin: 0 6px 6px 0;
+      text-decoration: none;
+      -webkit-transition: color 0.2s;
+    }
+
+    /* .tag::before {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+      content: '';
+      height: 6px;
+      left: 10px;
+      position: absolute;
+      width: 6px;
+      top: 10px;
+    } */
+
+
+    .tag:hover {
+      background-color: gray;
+      color: white;
+    }
+
+    .box {
+      display: flex;
+      height: 80vh;
+      align-items: center;
+      justify-content: center;
+      /* background-color: red; */
+    }
+
+    .heading-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+
+
+    .hdr {
+      /* font-size: large; */
+      font-size: 130%;
+
+    }
+
+    .col-sm>img {
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+
+    #layouts p {
+      display: none;
+    }
+
+    #layouts:hover img {
+      display: none;
+    }
+
+    #layouts:hover p {
+      display: initial;
+    }
+
+    #holdphones {
+      width: 70vw;
+    }
+
+    @media (max-width:992px) {
+
+      img {
+        width: 100%;
+      }
+      #holdphones {
+        width: 98vw;
+      }
+
+      .gap {
+        display: none;
+      }
+    }
+
+    .js #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #FFF;
+        z-index: 199;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    .js #preloader .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .js body.loaded #preloader {
+        -webkit-transform: scale(.6) translateY(-100%);
+        -moz-transform: scale(.6) translateY(-100%);
+        -ms-transform: scale(.6) translateY(-100%);
+        -o-transform: scale(.6) translateY(-100%);
+        transform: scale(.6) translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    .no-js #preloader {
+        display: none;
+    }
+  </style>
+
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://tierrasharae.github.io">tierra sharae</a>
+  <!--preloader-->
+  <div id='preloader'>
+
+        <div class='loader'>
+            <img src='img/load.gif' alt='loading'>
+        </div>
+
+    </div>
+  <!--/preloader-->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/">tierra sharae</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="https://tierrasharae.github.io/index.html#mt_about_me">about</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            portfolio
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://tierrasharae.github.io/pennstagram">design</a>
+            <a class="dropdown-item" href="https://tierrasharae.github.io/communication">communication</a>
+            <a class="dropdown-item" href="https://tierrasharae.github.io/coding">coding</a>
+
+            <!-- <div class="dropdown-divider"></div> -->
+            <!-- <a class="dropdown-item" href="#">design</a> -->
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/resume" target="_blank">resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:tierra@alumni.upenn.edu">contact</a>
+        </li>
+    </div>
+  </nav>
+
+
+  <!-- <div class="row"> -->
+  <!-- <div class="col" style="background-color:gainsboro;"> -->
+  <!-- <div class= "heading-container">
+  <h1 style="margin:10px 0 0 0;">Tierra Sharae</h1>
+  <h1 style="margin:10px 0 0 0; text-align:right;">Design</h1>
+
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <!-- <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul> -->
-      <!-- <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    <hr style="width:75%;">
+
+    <div class="container">
+
+
+      As a former journalist who has conducted countless interviews and had the
+      honor of telling hundred's of people's stories, I understand the value of
+
+    </div> -->
+
+
+  <!-- <div class="box"> -->
+
+
+  <div class="container">
+
+
+
+    <div class="gap"></div>
+
+
+
+
+
+
+
+    <!-- <div class="row justify-content-center">
+        <div class="col">
+          <img src="img/design/Rotato Snapshot.png">
+          <h6 style="text-align:center;">Instagram Feature Integration</h6>
+          <div class="tag">UX/UI</div>
+
+
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://tierrasharae.github.io/index.html#mt_about_me">about</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">portfolio <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://tierrasharae.github.io/design">design</a></li>
-            <li><a href="https://tierrasharae.github.io/communication">communication</a></li>
-            <li><a href="https://tierrasharae.github.io/coding">coding</a></li>
-            <!-- <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li> -->
-          </ul>
-        </li>
-        <li><a href="/resume" target="_blank">resume</a></li>
-        <li><a href="mailto:tierra@alumni.upenn.edu">contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        <div class="col">
+          <img src="img/design/customiced.jpg">
+          <h6 style="text-align:center;"></h6>
+          <div class="tag">Product</div>
+        </div>
+      </div> -->
+
+    <div class="row justify-content-center">
+
+
+      <div class="col-lg-4">
+        <!-- <div class="card"> -->
+          <h4 style="color:#000066;"><p></p>Hey! I'm Tierra Sharae.</h4>
+          <h6 style="line-height: 165%;"><p>Driven by a desire to challenge myself, better understand technology, and make a larger impact, I transitioned from television news to computer science in August 2018.</p> <p>I have since graduated from the University of Pennsylvania's School of Engineering and gained a great passion for frontend development.</p> <p>Here is a look at a few of my projects across all layers of the stack.</p></h6>
+
+        <!-- </div> -->
+        <br>
+
+      </div>
 
 
 
-<div class='portfolio-block section-block'>
 
-  <div class='container'>
 
-    <div class='row'>
-      <div class='col'>
+      <div class="col-lg-4">
+        <div class="card">
 
-        <div class='front-heading-portfolio text-center'>
-          <h2>
-            featured programming projects
-          </h2>
+          <a href="https://tierrasharae.github.io/unclarify.html">
+            <img alt='Unclarify' src='img/unclarify-nb.gif'>
+            </a>
+          <div class="card-body">
+            <h5 class="card-title">UNCLARIFY</h5>
+            <p class="card-text">Box-blur in C</p>
+            <div class="tag">C</div><div class="tag">Multithreading</div>
+          </div>
+        </div>
+        <br>
+      </div>
 
+
+      <div class="col-lg-4">
+        <div class="card">
+
+          <a href="https://youtu.be/EP61rqtbegY">
+            <img alt='Customiced' src='img/otf.gif'>
+            </a>
+          <div class="card-body">
+            <h5 class="card-title">ON THE FLY</h5>
+            <p class="card-text">Database-enabled web application</p>
+            <div class="tag" style="margin-left:0;">OracleDB</div><div class="tag">Angular</div><div class="tag">Express</div><div class="tag">Node</div>
+
+          </div>
         </div>
         <br>
 
       </div>
+
+      
+
+      <div class="col-lg-4">
+        <div class="card">
+
+          <a href="https://youtu.be/Kwe_vrnXR4E" target="_blank">
+            <img alt="What's the Temp?" src='img/arduino 8 5.gif'>
+            </a>
+          <div class="card-body">
+            <h5 class="card-title">WHAT'S THE TEMP?</h5>
+            <p class="card-text">Arduino-driven web application</p>
+            <div class="tag">Hardware</div> <div class="tag">Web Development</div>
+          </div>
+        </div>
+        <br>
+      </div>
+
+
+
+      <div class="col-lg-4">
+
+        <div class="card">
+          <a href="https://github.com/TierraSharae/PhillyCrimeDetector" target="_blank">
+            <div class="image02">
+              <img alt='Philly Crime Detector' src='img/pcd.gif'>
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">PHILLY CRIME DETECTOR</h5>
+          <p class="card-text">Customized computer mouse system</p>
+          <div class="tag">Java</div>
+        </div>
+      </div>
+      <br>
+
     </div>
 
 
-    <div id='portfolio-grid' class='portfolio-items'>
 
-      <div class='item'>
-        <div class='inner'>
 
+    <div class="col-lg-4">
+      <div class="card">
+
+        <a href="https://tierrasharae.github.io/customiced" target="_blank">
           <img alt='Customiced' src='img/customiced.png'>
-
-          <div class='caption'>
-
-            <div class='caption-inner'>
-
-              <h4>Customiced <br></h4>
-              <a href="/customiced">
-                <h5>* Web Development</h5>
-
-              </a>
-              <a href="/customiced.html" target="_blank">
-                <h5>* Product Design</h5>
-              </a>
-
-            </div>
-
-          </div>
+          </a>
+        <div class="card-body">
+          <h5 class="card-title">CUSTOMICED</h5>
+          <p class="card-text">E-commerce site for customized mouse</p>
+          <div class="tag">Just for Fun</div> <div class="tag">Web Development</div>
 
         </div>
       </div>
-      <div class='item'>
-        <div class='inner'>
-
-          <img alt='Unclarify' src='img/unclarify-nb.gif'>
-
-          <div class='caption'>
-
-            <div class='caption-inner'>
-
-              <a href='/unclarify.html' target="_blank">
-                <h4>Box-blur in C</h4>
-              </a>
-
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class='item'>
-        <div class='inner'>
-
-          <img alt="What's the Temp?" src='img/arduino 8 5.gif'>
-
-          <div class='caption'>
-
-            <div class='caption-inner'>
-
-              <a href="https://youtu.be/Kwe_vrnXR4E" target="_blank">
-                <h4>Arduino-Web App</h4>
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class='item'>
-        <div class='inner'>
-
-          <img alt='Philly Crime Detector' src='img/pcd.gif'>
-
-          <div class='caption'>
-
-            <div class='caption-inner'>
-
-              <a href="https://github.com/TierraSharae/PhillyCrimeDetector" target="_blank">
-                <h4>Philly Crime Detector</h4>
-              </a>
-              <h5>(Java)</h5>
-
-
-
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
+      <br>
 
     </div>
 
   </div>
 
-</div>
+  </div>
+
+
+  <img src="img/design/ellenahc-hover.gif" width="0" height="0">
+  <img src="img/design/pennstagram-hover.gif" width="0" height="0">
 
 
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
   <script src='old/js/jquery.min.js'></script>
   <script src='old/js/jquery.stellar.min.js'></script>
   <script src='old/js/modernizr.js'></script>
@@ -240,13 +432,15 @@
   <script src='old/js/jquery.shuffle.min.js'></script>
   <script src='old/js/jquery.magnific-popup.min.js'></script>
   <script src='old/js/validator.min.js'></script>
-  <script src='old/js/smoothscroll.js'></script>
+  <!-- <script src='old/js/smoothscroll.js'></script> -->
   <script src='old/js/script.js'></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
