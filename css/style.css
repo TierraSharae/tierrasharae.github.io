@@ -1164,9 +1164,9 @@ input[type="submit"] {
       #mt_about_me .about_img {
         width: 100%; } }
     #mt_about_me .about_img:before {
-      background: #f9f9f9 none repeat scroll 0 0;
+      background: #E8E8E8 none repeat scroll 0 0;
       content: "";
-      height: 384px;
+      height: 394px;
       position: absolute;
       right: 20px;
       top: -14px;
