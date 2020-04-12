@@ -82,10 +82,10 @@
 }
 
 
-.container a {
+/* .container a {
     color: #BA888B;
-    /* color: #996F72; */
-}
+    color: #996F72;
+} */
 
 a:hover {
     color: gray;
