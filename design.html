@@ -151,7 +151,33 @@
       width: 70vw;
     }
 
+    .desktop-pics {
+        display: none;
+    }
+
+
+    @media (min-width:700px) {
+      .mobile-pics {
+          display: none;
+      }
+
+      .desktop-pics {
+          display: initial;
+      }
+    }
+
+    @media (max-width:700px) {
+      #preloader {
+          display: none;
+      }
+    }
+
+
     @media (max-width:992px) {
+
+      #preloader {
+          display: none;
+        }
 
       img {
         width: 100%;
@@ -286,34 +312,15 @@
 
     <div class="gap"></div>
 
-
-
-
-
-
-
-    <!-- <div class="row justify-content-center">
-        <div class="col">
-          <img src="img/design/Rotato Snapshot.png">
-          <h6 style="text-align:center;">Instagram Feature Integration</h6>
-          <div class="tag">UX/UI</div>
-
-
-        </div>
-        <div class="col">
-          <img src="img/design/customiced.jpg">
-          <h6 style="text-align:center;"></h6>
-          <div class="tag">Product</div>
-        </div>
-      </div> -->
-
     <div class="row justify-content-center">
 
       <div class="col-lg-5">
         <div class="card">
 
           <a href="/ellenahc">
-          <img src="img/design/ellenahc.png" onmouseover="this.src='img/design/ellenahc-hover.gif'" onmouseout="this.src='img/design/ellenahc.png'" />
+          <img class="desktop-pics" src="img/design/ellenahc.png" onmouseover="this.src='img/design/ellenahc-hover.gif'" onmouseout="this.src='img/design/ellenahc.png'" />
+          <img class="mobile-pics" src="img/design/ellenahc.png">
+
             </a>
           <div class="card-body">
             <h5 class="card-title">ELLEN AHC JEWELRY</h5>
