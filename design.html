@@ -53,10 +53,17 @@
 
 
   <style>
+    .foo img:last-child {
+      display: none
+    }
 
-  .foo img:last-child{display:none}
-  .foo:hover img:first-child{display:none}
-  .foo:hover img:last-child{display:inline-block}
+    .foo:hover img:first-child {
+      display: none
+    }
+
+    .foo:hover img:last-child {
+      display: inline-block
+    }
 
 
     .image02:hover img {
@@ -162,6 +169,7 @@
       img {
         width: 100%;
       }
+
       #holdphones {
         width: 98vw;
       }
@@ -172,42 +180,42 @@
     }
 
     .js #preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #FFF;
-        z-index: 199;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        transition: all .5s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #FFF;
+      z-index: 199;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      transition: all .5s ease;
     }
 
     .js #preloader .loader {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
 
     .js body.loaded #preloader {
-        -webkit-transform: scale(.6) translateY(-100%);
-        -moz-transform: scale(.6) translateY(-100%);
-        -ms-transform: scale(.6) translateY(-100%);
-        -o-transform: scale(.6) translateY(-100%);
-        transform: scale(.6) translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        z-index: -1;
+      -webkit-transform: scale(.6) translateY(-100%);
+      -moz-transform: scale(.6) translateY(-100%);
+      -ms-transform: scale(.6) translateY(-100%);
+      -o-transform: scale(.6) translateY(-100%);
+      transform: scale(.6) translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
     }
 
     .no-js #preloader {
-        display: none;
+      display: none;
     }
   </style>
 
@@ -322,18 +330,14 @@
 
 
 
-
-
-
-
     <div class="row justify-content-center">
 
       <div class="col-lg-5">
         <div class="card">
           <a class="foo" href="/ellenahc">
-          <img src="img/design/ellenahc.png">
-          <img src="img/design/ellenahc-hover.gif">
-            </a>
+            <img src="img/design/ellenahc.png">
+            <img src="img/design/ellenahc-hover.gif">
+          </a>
           <div class="card-body">
             <h5 class="card-title">ELLEN AHC JEWELRY</h5>
             <p class="card-text">E-commerce site for handmade jewelry</p>
@@ -351,8 +355,8 @@
 
           <a class="foo" href="/pennstagram">
             <img src="img/design/pennstagram.png">
-             <img src="img/design/pennstagram-hover.gif">
-            </a>
+            <img src="img/design/pennstagram-hover.gif">
+          </a>
           <div class="card-body">
             <h5 class="card-title">PENNSTAGRAM</h5>
             <p class="card-text">Instagram feature integration</p>
@@ -367,11 +371,12 @@
 
           <a href="/noveltea">
             <img src="img/design/noveltea.jpg" onmouseover="this.src='img/design/noveltea-hover.jpg'" onmouseout="this.src='img/design/noveltea.jpg'" />
-            </a>
+          </a>
           <div class="card-body">
             <h5 class="card-title">NOVEL TEA</h5>
             <p class="card-text">Virtual book club mobile application</p>
-            <div class="tag">UI/UX</div> <div class="tag">Product</div>
+            <div class="tag">UI/UX</div>
+            <div class="tag">Product</div>
           </div>
         </div>
         <br>
@@ -410,15 +415,15 @@
 
 
 
-  <script src='old/js/jquery.min.js'></script>
+  <!-- <script src='old/js/jquery.min.js'></script>
   <script src='old/js/jquery.stellar.min.js'></script>
   <script src='old/js/modernizr.js'></script>
   <script src='old/js/owl.carousel.min.js'></script>
   <script src='old/js/jquery.shuffle.min.js'></script>
   <script src='old/js/jquery.magnific-popup.min.js'></script>
-  <script src='old/js/validator.min.js'></script>
+  <script src='old/js/validator.min.js'></script> -->
   <!-- <script src='old/js/smoothscroll.js'></script> -->
-  <script src='old/js/script.js'></script>
+  <!-- <script src='old/js/script.js'></script> -->
 
 
 
