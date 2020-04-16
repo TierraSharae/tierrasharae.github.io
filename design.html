@@ -53,6 +53,12 @@
 
 
   <style>
+
+  .foo img:last-child{display:none}
+  .foo:hover img:first-child{display:none}
+  .foo:hover img:last-child{display:inline-block}
+
+
     .image02:hover img {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
@@ -211,13 +217,13 @@
 <body>
 
   <!--preloader-->
-  <div id='preloader'>
+  <!-- <div id='preloader'>
 
         <div class='loader'>
             <img src='img/load.gif' alt='loading'>
         </div>
 
-    </div>
+    </div> -->
   <!--/preloader-->
 
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -307,13 +313,26 @@
         </div>
       </div> -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="row justify-content-center">
 
       <div class="col-lg-5">
         <div class="card">
-
-          <a href="/ellenahc">
-          <img src="img/design/ellenahc.png" onmouseover="this.src='img/design/ellenahc-hover.gif'" onmouseout="this.src='img/design/ellenahc.png'" />
+          <a class="foo" href="/ellenahc">
+          <img src="img/design/ellenahc.png">
+          <img src="img/design/ellenahc.gif">
             </a>
           <div class="card-body">
             <h5 class="card-title">ELLEN AHC JEWELRY</h5>
@@ -383,8 +402,8 @@
   </div>
 
 
-  <img src="img/design/ellenahc-hover.gif" width="0" height="0">
-  <img src="img/design/pennstagram-hover.gif" width="0" height="0">
+  <!-- <img src="img/design/ellenahc-hover.gif" width="0" height="0">
+  <img src="img/design/pennstagram-hover.gif" width="0" height="0"> -->
 
 
 
