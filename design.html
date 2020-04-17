@@ -35,6 +35,10 @@
 
   <style>
 
+    .big-ver {
+      display:none;
+    }
+
     .card {
       margin-top: 1.25rem;
     }
@@ -49,8 +53,9 @@
 
     .demo-photo img {
       border-radius: .25rem;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
+
     .foo img:last-child {
       display: none
     }
@@ -160,6 +165,17 @@
 
     #holdphones {
       width: 70vw;
+    }
+
+
+    @media (min-width:600px) {
+      .big-ver {
+        display:flex;
+      }
+
+      .lil-ver {
+        display: none;
+      }
     }
 
     @media (max-width:992px) {
@@ -328,26 +344,26 @@
 
 
 
-
-
-
-
-    <div class="row justify-content-center">
+    <div class="row justify-content-center big-ver">
 
       <div class="col-lg-5">
         <div class="card">
           <figure class="imghvr-shutter-in-out-diag-1 demo-photo">
             <!-- <img src="img/design/ellenahc.png"> -->
-            <img src="img/design/ellenahc-small.jpg" srcset="img/design/ellenahc-hover.gif 960w">
+            <img src="img/design/ellenahc-hover.gif">
             <figcaption>
-       <h3>Summary</h3>
-       <p>After years of selling jewelry on Etsy, the client wanted to launch a site that looks simple but "not boring" and attracts advertisers.</p>
-       <p><ion-icon name="hammer"></ion-icon><strong>&nbsp;tools</strong>: Adobe XD, Adobe Photoshop</p>
-       <p><ion-icon name="person"></ion-icon><strong>&nbsp;team size</strong>: 1</p>
-       <p>Research methods include interviews and observational usability testing.</p>
-        </figcaption>
-        <a href="/ellenahc"></a>
-        </figure>
+              <h3>Summary</h3>
+              <p>After years of selling jewelry on Etsy, the client wanted to launch a site that looks simple but "not boring" and attracts advertisers.</p>
+              <p>
+                <ion-icon name="hammer"></ion-icon><strong>&nbsp;tools</strong>: Adobe XD, Adobe Photoshop
+              </p>
+              <p>
+                <ion-icon name="person"></ion-icon><strong>&nbsp;team size</strong>: 1
+              </p>
+              <p>Research methods include interviews and observational usability testing.</p>
+            </figcaption>
+            <a href="/ellenahc"></a>
+          </figure>
 
 
 
@@ -420,6 +436,95 @@
     </div>
 
   </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="row justify-content-center lil-ver">
+
+    <div class="col-lg-5">
+      <div class="card">
+        <a class= "demo-photo" href="/ellenahc">
+          <img src="img/design/ellenahc-small.jpg">
+          </a>
+        <div class="card-body">
+          <h5 class="card-title">ELLEN AHC JEWELRY</h5>
+          <p class="card-text">E-commerce site for handmade jewelry</p>
+          <div class="tag">UI/UX</div>
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+
+
+    <div class="col-lg-5">
+      <div class="card">
+
+        <a class="demo-photo" href="/pennstagram">
+          <!-- <img src="img/design/pennstagram.png"> -->
+          <img src="img/design/pennstagram-small.jpg">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">PENNSTAGRAM</h5>
+          <p class="card-text">Instagram feature integration</p>
+          <div class="tag">UI/UX</div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="card">
+
+        <a class="demo-photo" href="/noveltea">
+          <img src="img/design/noveltea.jpg">
+          <!-- <img src="img/design/noveltea-hover.jpg"> -->
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">NOVEL TEA</h5>
+          <p class="card-text">Virtual book club mobile application</p>
+          <div class="tag">UI/UX</div>
+          <div class="tag">Product</div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+
+
+    <div class="col-lg-5">
+
+      <div class="card">
+        <a href="/customiced.html">
+          <div class="image02 demo-photo">
+            <img src="img/design/customiced.jpg" class="card-img-top image" alt="...">
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">CUSTOMICED</h5>
+        <p class="card-text">Customized computer mouse system</p>
+        <div class="tag">Product</div>
+
+      </div>
+    </div>
+    <br>
+
+  </div>
+
+</div>
+
+
+
+
+
 
   </div>
 
