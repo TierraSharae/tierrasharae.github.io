@@ -784,7 +784,7 @@
     <!-- scrollSpy plugin see https://github.com/thesmart/jquery-scrollspy -->
     <script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
 
-    
+
     <!-- WOW Js -->
     <script src="js/wow.min.js"></script>
     <script>
@@ -799,12 +799,15 @@
       // Attach scrollSpy to .wow elements for detect view exit events,
       // then reset elements and add again for animation
       $('.wow').on('scrollSpy:exit', function() {
+        if ($(this).css('animation-name') !=='fadeInLeft' && $(this).css('animation-name') !=='fadeInRight') {
+
         $(this).css({
           'visibility': 'hidden',
           'animation-name': 'none'
         }).removeClass('animated');
         wow.addBox(this);
-      }).scrollSpy();
+      }
+    }).scrollSpy();
     </script>
 
 
