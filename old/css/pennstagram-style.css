@@ -1478,11 +1478,11 @@ body.section-show .transition-mask:before {
     }
 }
 
-.work-info>li {
+/* .work-info>li {
     margin-bottom: 55px;
     margin-top: 5px;
     padding: 0;
-}
+} */
 
 .work-info>li>h4>i {
     margin-right: 8px;

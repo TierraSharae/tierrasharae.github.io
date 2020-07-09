@@ -2182,7 +2182,8 @@ body .symp-btn {
 }
 
 .work-info>li {
-    margin-bottom: 55px;
+    margin-bottom: 25px;
+    /* margin-bottom: 55px; */
     margin-top: 5px;
     padding: 0;
 }
