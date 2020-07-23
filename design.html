@@ -50,6 +50,88 @@
 
   <style>
 
+
+.box-a, .box-b, .box-c, .box-d, .box-e {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: red;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+/* .box-b, .box-c, .box-d, .box-e {height:164px;} */
+
+/* .box-b a, .box-c a, .box-d a, .box-e a {line-height:164px;} */
+
+@media (max-width: 991px) {
+  .col-md-12{padding:5px 0px;}
+  .box-a {height:125px !important;}
+  .box-a a {line-height:125px;}
+}
+
+
+.normal-underline,
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.normal-underline,
+.normal-underline:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+
+
+
+/*--- Green Box (box-c) ---*/
+.box-c .custom-underline::after {
+  top: 100%;
+  height: 2px !important;
+  width: 50%;
+  left: 25%;
+  background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.4s ease-out all .1s;
+}
+
+.box-c:hover .custom-underline::after {
+  width: 100%;
+  left: 1%;
+    transition: 0.5s ease all;
+}
+
+
     .big-ver {
       display:none;
     }
@@ -306,8 +388,8 @@
 
 
 
-  <div class="container">
-    <h5 style="text-align: center;"><p></p>Hi! I'm Tierra, a Philadelphia-based UI/UX designer.</h5>
+  <div class="container pb-5">
+    <h4 style="text-align: center;"><p></p>Hi! I'm Tierra, a Philadelphia-based UI/UX designer.</h4>
     <h6 style="text-align: center; color:gray;">As a former journalist with degrees in Communication and Computer Science, <br>I research and listen intently to design with everyone in mind, from the user to the developer.</h6>
 
 
@@ -499,7 +581,7 @@
       <div class="card">
 
         <a class="demo-photo" href="/noveltea">
-          <img src="img/design/noveltea.jpg">
+          <img src="img/design/nt.png">
           <!-- <img src="img/design/noveltea-hover.jpg"> -->
         </a>
         <div class="card-body">
@@ -544,6 +626,49 @@
   </div>
 
 
+  <div class="container-fluid" style="background-color:whitesmoke;">
+
+    <!-- <div class="row pt-5 justify-content-center">
+      <h4>Some Awesome Organizations I've Worked With</h4>
+    </div> -->
+
+    <div class="row pt-5 pb-5 justify-content-center">
+
+      <div class="col-lg-3 mb-3 mt-3 text-center">
+        <div class="box-c">
+          <a href="http://ethicalidentity.com" class="custom-underline"><img src="img/design/ei.png"></a>
+      </div>
+      <p class="pt-1">
+      I conducted research on the upcoming product's market and potential users, created wireframes, a design system, and high-fidelity prototypes for a web app and iPad kiosk.
+    <br><em>April - August 2020</em></p>
+      </div>
+
+
+      <div class="col-lg-3 mb-3 mt-3 text-center">
+        <div class="box-c">
+        <a href="https://www.azcardinals.com/" target="_blank" class="custom-underline"><img src="img/design/az.png"></a>
+      </div>
+      <p class="pt-1">
+        Using Figma, I created an interactive, high-fidelity mockup as part of the redesign efforts to modernize an internal, statistics-focused webpage.
+      <br><em>April 2020</em></p>
+      </div>
+
+
+
+      <div class="col-lg-3 mb-3 mt-3 text-center">
+        <div class="box-c">
+          <a href="https://www.shimbly.com/" target="_blank" class="custom-underline"><img src="img/design/sh.png"></a>
+      </div>
+      <p class="pt-1">
+      After leading the design of and creating graphics for the pitch deck, I am working alongside a team of designers to create a style guide and interactive prototype for the upcoming home search platform.
+    <br><em>April 2020 - Present</em></p>
+      </div>
+
+    </div>
+
+  </div>
+
+
   <!-- <img src="img/design/ellenahc-hover.gif" width="0" height="0">
   <img src="img/design/pennstagram-hover.gif" width="0" height="0"> -->
 
@@ -570,6 +695,9 @@
 
   <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+
 
 
 
