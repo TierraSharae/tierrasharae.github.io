@@ -172,7 +172,7 @@
 
               <h4><i class='ion-ionic'></i>Overview</h4>
 
-              <p>Trusted Arms Network is an online marketplace that aims to promote accountability in secondhand firearm sales while protecting users' personal data. It is a service under the parent company <a href="https://ethicalidentity.com" target="_blank">Ethical Identity</a>, where I was a Summer 2020 UI/UX Design Intern.</p>
+              <p><a href="https://trustedarmsnetwork.com" target="_blank">Trusted Arms Network</a> is an online marketplace that aims to promote accountability in secondhand firearm sales while protecting users' personal data. It is a service under the parent company <a href="https://ethicalidentity.com" target="_blank">Ethical Identity</a>, where I was a Summer 2020 UI/UX Design Intern.</p>
 
 
             </li>
@@ -202,17 +202,6 @@
               <p>Four designers, eight developers, one project manager/CEO</p>
 
             </li>
-
-
-            <!-- <p>
-                <a style="font-size:smaller;" href="img/customiced/concept_presentation.pdf" target="_blank" class="btn btn-outline-secondary" role="button">Concept Presentation</a>
-                <a style="font-size:smaller;" href="img/customiced/drawings.pdf" target="_blank" class="btn btn-outline-secondary" role="button">Drawings</a>
-                <a style="font-size:smaller;" href="img/customiced/naming_patentability.pdf" target="_blank" class="btn btn-outline-secondary" role="button">Naming/Patentability</a>
-                <a style="font-size:smaller;" href="img/customiced/executive_summary.pdf" target="_blank" class="btn btn-outline-secondary" role="button">Executive Summary</a>
-                <br><br>
-                As a personal project, I am currently working on an interactive, responsive <a href="https://tierrasharae.github.io/customiced" target=”_blank”>website for Customiced</a>.
-              </p> -->
-
 
           </ul>
 
@@ -260,7 +249,7 @@
                   </div>
                 </div>
 
-                <p>Further, many gun owners expressed that the general process of buying a pre-owned firearm is not streamlined nor convenient. </p>
+                <p>Further, many gun owners expressed that the general process of buying a pre-owned firearm is not streamlined nor convenient, involving many documents and forms that can be lengthy, overwhelming and easy to misplace.</p>
 
           </div>
         </div>
@@ -992,10 +981,34 @@
     <!-- <script src="https://use.fontawesome.com/edbc1f0345.js"></script> -->
     <script src="https://kit.fontawesome.com/097065c76b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+    <!-- scrollSpy plugin see https://github.com/thesmart/jquery-scrollspy -->
+    <script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
+
+
+    <!-- WOW Js -->
     <script src="js/wow.min.js"></script>
     <script>
-          new WOW().init();
+      WOW.prototype.addBox = function(element) {
+        this.boxes.push(element);
+      };
+
+      // Init WOW.js and get instance
+      var wow = new WOW();
+      wow.init();
+
+      // Attach scrollSpy to .wow elements for detect view exit events,
+      // then reset elements and add again for animation
+      $('.wow').on('scrollSpy:exit', function() {
+        $(this).css({
+          'visibility': 'hidden',
+          'animation-name': 'none'
+        }).removeClass('animated');
+        wow.addBox(this);
+    }).scrollSpy();
     </script>
+
 
 
 </body>
