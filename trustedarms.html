@@ -480,6 +480,7 @@
 
 
 
+      <div class="gap-smaller"></div>
 
       <div class="row mt-5 align-items-center">
         <div class="col-lg-5 offset-lg-1">
@@ -611,7 +612,7 @@
     <div class="row mt-5">
         <div class="col-lg-12 doc-holder">
           <div id="l1" class="containerTabDocs" style="display:none;">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fas fa-compress-alt"></i></span>
 
             <div class="row">
               <div class="col-lg-8 offset-lg-2">
@@ -647,11 +648,9 @@
             </div>
           </div>
 
-        </div>
 
         <div id="l2" class="containerTabDocs" style="display:none;">
-          <!-- If you want the ability to close the container, add a close button -->
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+          <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fas fa-compress-alt"></i></span>
 
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -694,15 +693,17 @@
 
         </div>
 
-        <div id="l3" class="containerTabDocs" style="display:none;">
-          <!-- If you want the ability to close the container, add a close button -->
+        <!-- <div id="l3" class="containerTabDocs" style="display:none;">
           <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
           <p>in-store iPad kiosks allows firearm buyers and sellers to validate their identity in the presence of an endorser. I designed the registration and login pages for this multi-user journey.</p>
-        </div>
+        </div> -->
 
         <div id="l4" class="containerTabDocs" style="display:none;">
           <!-- If you want the ability to close the container, add a close button -->
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+          <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fas fa-compress-alt"></i></span>
+
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
           <p>I designed an attention-grabbing, interactive catalogue and carousel to encourage people shopping for firearms at local retail stores to learn about Trusted Arms Network and register.</p>
 
           <p>The video demo below features several user-centric design patterns, including:
@@ -713,6 +714,11 @@
             </ol>
           </p>
 
+        </div>
+      </div>
+
+
+
           <!-- <video style="border: 1px solid #d8d8d8; border-radius:10px;" width="320" autoplay controls muted>
             <source src="img/design/tan-kiosk-demo.mp4" type="video/mp4"> -->
 
@@ -722,6 +728,8 @@
         </div>
       </div>
     </div>
+  </div>
+
 
     <style>
     video {
@@ -765,7 +773,6 @@
 
 
     <div class="container">
-      <div class="gap-smaller"></div>
 
       <div class="row align-items-center mt-5 mb-5 wow fadeIn">
         <div class="col-lg-8 offset-lg-2">
@@ -851,52 +858,6 @@
 
 
     <style>
-      .circular-chart {
-        display: block;
-        margin: 10px auto;
-        max-width: 80%;
-        max-height: 250px;
-      }
-
-      .circle-bg {
-        fill: none;
-        stroke: #eee;
-        stroke-width: 3.8;
-      }
-
-      .circle {
-        fill: none;
-        stroke-width: 2.8;
-        stroke-linecap: round;
-        animation: progress 1s ease-out forwards;
-      }
-
-      @keyframes progress {
-        0% {
-          stroke-dasharray: 0 100;
-        }
-      }
-
-      .circular-chart.orange .circle {
-        stroke: #ff9f00;
-      }
-
-      .circular-chart.green .circle {
-        stroke: #4CC790;
-      }
-
-      .circular-chart.blue .circle {
-        stroke: #3c9ee5;
-      }
-
-      .percentage {
-        fill: #666;
-        font-family: sans-serif;
-        font-size: 0.5em;
-        text-anchor: middle;
-      }
-
-
 
       .container a {
         color: #8F3737;
@@ -1004,26 +965,21 @@
       }
 
 
-      .previews {
 
-        clip-path: polygon(
-            /* X and Y points */
-            0 30%,
-            30% 0,
-            100% 0,
-            100% 70%,
-            70% 100%,
-            0 100%);
-        border: 2px solid #B6CCDB;
-        /* margin:1px; */
 
+
+      /* Closable button inside the image */
+      .closebtn {
+        float: right;
+        /* color: white; */
+        font-size: 35px;
+        cursor: pointer;
       }
 
-      #previews-caption {
-        color: gray;
-        font-size: smaller;
-        text-transform: uppercase;
-      }
+
+
+
+
 
 
 
