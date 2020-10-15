@@ -270,7 +270,12 @@
         display:flex;
       }
 
-      .lil-ver {
+      @media (min-width:600px) {
+        .desktop-gal {
+          display:initial;
+        }
+
+      .lil-ver, .mobile-gal {
         display: none;
       }
     }
@@ -713,7 +718,7 @@
     <div class="row pt-5">
       <div class="col-lg-8">
       <h4>Pastime Pixels</h4>
-      <h6 style="color:gray;" class="pb-3">During Summer 2020, as I and many others began spending more time at home, I've had so much fun exploring UI design and dabbling in digital art on a near-daily basis. Some results are below.</h6>
+      <h6 style="color:gray;" class="pb-3">During Summer 2020, as I and many others began spending more time at home, I've had so much fun exploring UI design and dabbling in digital art on a near-daily basis. <span class="mobile-gal">Some results are below.</span><span class="desktop-gal"><a style="color: darkblue;" href="fun">View the gallery here.</a></span></h6>
     </div>
   </div>
 
