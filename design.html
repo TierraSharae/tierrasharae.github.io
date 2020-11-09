@@ -914,9 +914,11 @@
       <div id="gridder-content-6" class="gridder-content">
           <div class="row">
               <div class="col-sm-6">
-                  <img src="img/design/relevart.gif" class="img-fluid" />
+                <img id="my-img" src="img/design/relevart-still.png" onmouseover="hover(this);" onmouseout="unhover(this);" class="img-fluid" />
+
+                  <!-- <img src="img/design/relevart.gif" class="img-fluid" /> -->
                   <p></p>
-                  <p>For the UI, I went for a scrapbook-like aesthetic and minimalist design to allow the photos to shine. View the prototype <a href="https://tierrasharae.invisionapp.com/prototype/ckh6y7m7y00yl9401zn0u1eq4/play" target="_blank">here</a> (and press "H" upon loading for the best viewing experience!)</p>
+                  <p><b>Hover</b> the image above for a brief demo! For the UI, I went for a scrapbook-like aesthetic and minimalist design to allow the photos to shine. View the prototype <a href="https://tierrasharae.invisionapp.com/prototype/ckh6y7m7y00yl9401zn0u1eq4/play" target="_blank">here</a> (and press "H" upon loading for the best viewing experience!)</p>
                   <!-- <p>Click here to view the prototype! Remember to press "H" for the</p> -->
               </div>
               <div class="col-sm-6">
@@ -926,6 +928,17 @@
               </div>
           </div>
       </div>
+
+      <script>
+      function hover(element) {
+          element.setAttribute('src', 'img/design/relevart.gif');
+        }
+
+        function unhover(element) {
+          element.setAttribute('src', 'img/design/relevart-still.png');
+        }
+
+      </script>
       <div id="gridder-content-7" class="gridder-content">
           <div class="row">
               <div class="col-sm-6">
