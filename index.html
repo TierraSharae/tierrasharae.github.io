@@ -197,7 +197,7 @@
             <div class="col-md-5 col-sm-5 col-xs-5 col-md-offset-1 col-xs-offset-1 col-md-offset-1">
                 <!-- <div class="banner_caption_img"> -->
                   <a class="for-my-pic" href="/design">
-                    <img src="images/tierra-sketch.png" alt="Design">
+                    <img src="images/tierra-sketch.png" alt="Design" data-toggle="tooltip" data-html="true" data-placement="left" title="<em>&quot;Me, in Shoes I'd Surely Fall In&quot;</em><br>Adobe Illustrator, Fall 2020">
                     <p class="cent" style="color:#000D5D"><a style="color:#000D5D; text-decoration:none; cursor:pointer;" href="/design">View my design projects <b>here</b></a>.</p>
                   </a>
               <style>
@@ -529,6 +529,13 @@
 <script src="js/isotope.min.js"></script>
 <!-- Main Js -->
 <script src="js/main.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
 
 </body>
 </html>
