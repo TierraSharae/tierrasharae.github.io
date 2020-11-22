@@ -1,46 +1,36 @@
 <!DOCTYPE html>
-<html class='no-js'>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <title>Tierra Sharae - Design</title>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146170969-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146170969-1');
+      </script>
+
+        <link href="httsp://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="gridder-master/dist/css/jquery.gridder.min.css" rel="stylesheet">
+        <link href="gridder-master/demo/css/demo.css" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='old/css/comm-style.css'>
+        <link rel='stylesheet' type='text/css' href='old/css/color-default.css'>
 
 
-  <title>Tierra Sharae</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146170969-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-146170969-1');
-  </script>
-
-  <!--[if lt IE 9]>
-		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-  <!-- <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css'> -->
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel='stylesheet' type='text/css' href='old/css/ionicons.min.css'>
-
-  <link rel='stylesheet' type='text/css' href='old/css/owl.carousel.css'>
-  <link rel='stylesheet' type='text/css' href='old/css/owl.theme.css'>
-  <link rel='stylesheet' type='text/css' href='old/css/owl.transitions.css'>
-  <link rel='stylesheet' type='text/css' href='old/css/magnific-popup.css'>
-  <link rel='stylesheet' type='text/css' href='old/css/comm-style.css'>
-  <link rel='stylesheet' type='text/css' href='old/css/color-default.css'>
-
-  <!-- ****** faviconit favicons ****** -->
+        <!-- ****** faviconit favicons ****** -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon-192.png">
@@ -64,409 +54,297 @@
   <!-- ****** faviconit favicons ****** -->
 
 
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-  <style>
-    .image02:hover img {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-    }
-
-
-    .gap {
-      height: 1vh;
-    }
-
-
-
-    /* tags */
-    tags {
-      list-style: none;
-      margin: 0;
-      overflow: hidden;
-      padding: 0;
-    }
-
-    .tags li {
-      float: left;
-    }
-
-    .tag {
-      background: #eee;
-      border-radius: 3px;
-      color: #999;
-      display: inline-block;
-      height: 26px;
-      line-height: 26px;
-      padding: 0 7px 0 7px;
-      position: relative;
-      margin: 0 6px 6px 0;
-      text-decoration: none;
-      -webkit-transition: color 0.2s;
-    }
-
-    /* .tag::before {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-      content: '';
-      height: 6px;
-      left: 10px;
-      position: absolute;
-      width: 6px;
-      top: 10px;
-    } */
-
-
-    .tag:hover {
-      background-color: gray;
-      color: white;
-    }
-
-    .box {
-      display: flex;
-      height: 80vh;
-      align-items: center;
-      justify-content: center;
-      /* background-color: red; */
-    }
-
-    .heading-container {
-      display: flex;
-      justify-content: space-around;
-    }
+        <style>
+        .giffy{
+        }
+        .giffy::after {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            color:black;
+            background-color: white;
+            padding: 2px 5px;
+            border-radius:2px;
+            opacity: 50%;
+            content: "GIF";
+          }
 
 
 
-    .hdr {
-      /* font-size: large; */
-      font-size: 130%;
+          .video-container {
+              overflow: hidden;
+              position: relative;
+              width:100%;
+          }
 
-    }
+          .video-container::after {
+              padding-top: 56.25%;
+              display: block;
+              content: '';
+          }
 
-    .col-sm>img {
-      border: 2px solid #000;
-      border-radius: 10px;
-    }
-
-    #layouts p {
-      display: none;
-    }
-
-    #layouts:hover img {
-      display: none;
-    }
-
-    #layouts:hover p {
-      display: initial;
-    }
-
-    #holdphones {
-      width: 70vw;
-    }
-
-    @media (max-width:992px) {
-
-      img {
-        width: 100%;
-      }
-      #holdphones {
-        width: 98vw;
-      }
-
-      .gap {
-        display: none;
-      }
-    }
-
-    /* .js #preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #FFF;
-        z-index: 199;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        transition: all .5s ease;
-    }
-
-    .js #preloader .loader {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .js body.loaded #preloader {
-        -webkit-transform: scale(.6) translateY(-100%);
-        -moz-transform: scale(.6) translateY(-100%);
-        -ms-transform: scale(.6) translateY(-100%);
-        -o-transform: scale(.6) translateY(-100%);
-        transform: scale(.6) translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        z-index: -1;
-    }
-
-    .no-js #preloader {
-        display: none;
-    } */
-  </style>
+          .video-container iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+          }
 
 
-</head>
+        </style>
+    </head>
+    <body>
 
-<body>
 
-  <!--preloader-->
-  <!-- <div id='preloader'>
 
-        <div class='loader'>
-            <img src='img/load.gif' alt='loading'>
+      <nav class="navbar navbar-expand-lg navbar-light">
+    			<a class="navbar-brand" href="/">ts</a>
+    			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+    			</button>
+
+    			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    				<ul class="navbar-nav ml-auto">
+    					<!-- <li class="nav-item active">
+    					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    				</li> -->
+
+    					<li class="nav-item">
+    						<a class="nav-link" href="https://tierrasharae.github.io/">home</a>
+    					</li>
+
+    					<li class="nav-item">
+    						<a class="nav-link" href="https://tierrasharae.github.io/index.html#mt_about_me">about</a>
+    					</li>
+    					<li class="nav-item dropdown">
+    						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    							portfolio
+    						</a>
+    						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    							<a class="dropdown-item" href="https://tierrasharae.github.io/design">design</a>
+    							<a class="dropdown-item" href="https://tierrasharae.github.io/communication">communication</a>
+    							<a class="dropdown-item" href="https://tierrasharae.github.io/coding">coding</a>
+    							<!-- <div class="dropdown-divider"></div> -->
+    							<!-- <a class="dropdown-item" href="#">design</a> -->
+    						</div>
+    					</li>
+    					<li class="nav-item">
+    						<a class="nav-link" href="/resume" target="_blank">resume</a>
+    					</li>
+    					<li class="nav-item">
+    						<a class="nav-link" href="mailto:tierra@alumni.upenn.edu">contact</a>
+    					</li>
+    			</div>
+    		</nav>
+
+
+
+
+
+
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+            <h1><p></p>Coding</h1>
+          <h6 style="color:gray; line-height:150%" class="pb-5">Driven by a desire to challenge myself, better understand technology, and make a larger impact, I transitioned from television news to computer science in August 2018.
+
+I have since graduated from the University of Pennsylvania's School of Engineering and worked in frontend development.
+
+Here is a look at a few of my projects across all layers of the stack.</p>
+</h6>
         </div>
-
-    </div> -->
-  <!--/preloader-->
-
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="/">ts</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li> -->
-
-      <li class="nav-item">
-        <a class="nav-link" href="https://tierrasharae.github.io/">home</a>
-      </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="https://tierrasharae.github.io/index.html#mt_about_me">about</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            portfolio
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://tierrasharae.github.io/design">design</a>
-            <a class="dropdown-item" href="https://tierrasharae.github.io/communication">communication</a>
-            <a class="dropdown-item" href="https://tierrasharae.github.io/coding">coding</a>
-            <!-- <div class="dropdown-divider"></div> -->
-            <!-- <a class="dropdown-item" href="#">design</a> -->
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/resume" target="_blank">resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mailto:tierra@alumni.upenn.edu">contact</a>
-        </li>
-    </div>
-  </nav>
-
-
-  <!-- <div class="row"> -->
-  <!-- <div class="col" style="background-color:gainsboro;"> -->
-  <!-- <div class= "heading-container">
-  <h1 style="margin:10px 0 0 0;">Tierra Sharae</h1>
-  <h1 style="margin:10px 0 0 0; text-align:right;">Design</h1>
-
-    </div>
-
-    <hr style="width:75%;">
-
-    <div class="container">
-
-
-      As a former journalist who has conducted countless interviews and had the
-      honor of telling hundred's of people's stories, I understand the value of
-
-    </div> -->
-
-
-  <!-- <div class="box"> -->
-
-
-  <div class="container">
-
-
-
-    <div class="gap"></div>
-
-
-
-
-
-
-
-    <!-- <div class="row justify-content-center">
-        <div class="col">
-          <img src="img/design/Rotato Snapshot.png">
-          <h6 style="text-align:center;">Instagram Feature Integration</h6>
-          <div class="tag">UX/UI</div>
-
-
-        </div>
-        <div class="col">
-          <img src="img/design/customiced.jpg">
-          <h6 style="text-align:center;"></h6>
-          <div class="tag">Product</div>
-        </div>
-      </div> -->
-
-    <div class="row justify-content-center">
-
-
-      <div class="col-lg-4">
-        <!-- <div class="card"> -->
-          <h4 style="color:#000066;"><p></p>Hey! I'm Tierra Sharae.</h4>
-          <h6 style="line-height: 165%;"><p>Driven by a desire to challenge myself, better understand technology, and make a larger impact, I transitioned from television news to computer science in August 2018.</p> <p>I have since graduated from the University of Pennsylvania's School of Engineering and gained a great passion for frontend development.</p> <p>Here is a look at a few of my projects across all layers of the stack.</p></h6>
-
-        <!-- </div> -->
-        <br>
-
       </div>
+    </div>
+
+
+
+        <div class="container pb-5">
+
+            <ul class="gridder">
+                <li class="gridder-list" data-griddercontent="#gridder-hmt">
+                    <img src="img/coding/thumb-hmt.png" class="img-fluid">
+                </li>
+                <!--
+                --><li class="gridder-list" data-griddercontent="#gridder-shakespeare">
+                    <img src="img/coding/thumb-shakespeare.png" class="img-fluid">
+                    <!-- <p class="giffy"></p> -->
+                </li>
+                <!--
+                --><li class="gridder-list" data-griddercontent="#gridder-otf">
+                    <img src="img/coding/thumb-otf.png" class="img-fluid">
+                </li>
+
+                <!--
+                --><li class="gridder-list" data-griddercontent="#gridder-arduino">
+                    <img src="img/coding/thumb-arduino.png" class="img-fluid">
+                </li>
+
+
+                <!--
+                --><li class="gridder-list" data-griddercontent="#gridder-unclarify">
+                    <img src="img/coding/thumb-unclarify.png" class="img-fluid">
+                    <!-- <p class="giffy"></p> -->
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-pcd">
+                    <img src="img/coding/thumb-pcd.png" class="img-fluid">
+                    <!-- <p class="giffy"></p> -->
+
+
+            </ul>
+
+
+            <div id="gridder-hmt" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="img/coding/hmt.gif" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Material Texts</h2>
+                        <p>As a frontend developer for Penn Libraries, I worked on the website for UPenn's Workshop in the History of Material Texts. During Summer 2019, I worked on developing a large, searchable database of seminars that have been held since 1996. </p>
+                        <a href="https://pennmaterialtexts.org/" target="_blank" style="border-radius: 0; color:white;" class="btn btn-dark btn-lg btn-block mb-3" role="button">View live site</a>
+                        <p><i class='bx bxs-purchase-tag'></i> Python, Django, Docker, HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-shakespeare" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <img src="img/coding/shakespeare.gif" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Shakespeare Census</h2>
+                        <p>The Shakespeare Census aims to locate and describe all extant copies of all editions of Shakespeare’s works through 1700 (with the exception of the folios). As a frontend developer, I worked on the search feature and displaying the results.</p>
+                        <a href="https://shakespearecensus.org/" target="_blank" style="border-radius: 0; color:white;" class="btn btn-dark btn-lg btn-block mb-3" role="button">View live site</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="gridder-otf" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/EP61rqtbegY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>                    </div>
+                    <div class="col-sm-6">
+                        <h2>On the Fly</h2>
+                        <p>On the Fly is a database-enabled web application that seeks to determine how migration patterns in Golden Eagles have changed in relation to changes in climate over time. This was a project for my Database and Information Systems course at the University of Pennsylvania.</p>
+                          <p><i class='bx bxs-purchase-tag'></i> Angular, Express.js, Node.js, OracleDB, query optimization</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="gridder-arduino" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Kwe_vrnXR4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>What's the Temp?</h2>
+                        <p>As a project for Computer Systems Programming at the University of Pennsylvania, I worked with three classmates to develop a system with embedded and web components. The web app gets data from and sends control information to a remote sensor and display driven by an Arduino microcontroller.</p>
+                          <p><i class='bx bxs-purchase-tag'></i>Arduino, C, HTML, CSS, Bootstrap, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="gridder-unclarify" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="img/coding/unclarify-nb.gif" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Unclarify</h2>
+                        <p>Unclarify implements a box blur on a bitmap image provided by the user. This began as an assignment for practice with POSIX Threads and the QDBMP library, and I created a GUI just for fun.</p>
+                        <p><i class='bx bxs-purchase-tag'></i> C, HTML, CSS</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="gridder-pcd" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="img/coding/pcd.gif" class="img-fluid" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Crime Estimator</h2>
+                        <p>This Java application calculates the likelihood of crime for a user based on his or her location and the time of day using Philadelphia Police Department crime incidents from 2017 through 2018. More than 228,000 crimes are included in the analysis!</p>
+                        <a href="https://github.com/TierraSharae/PhillyCrimeDetector" target="_blank" style="border-radius: 0; color:white;" class="btn btn-dark btn-lg btn-block mb-3" role="button">View the repo</a>
+                        <p><i class='bx bxs-purchase-tag'></i> Java, Google Geocoding API</p>
+                    </div>
+                </div>
+            </div>
 
 
 
 
 
-      <div class="col-lg-4">
-        <div class="card">
 
-          <a href="https://tierrasharae.github.io/unclarify.html">
-            <img alt='Unclarify' src='img/unclarify-nb.gif'>
-            </a>
-          <div class="card-body">
-            <h5 class="card-title">UNCLARIFY</h5>
-            <p class="card-text">Box-blur in C</p>
-            <div class="tag">C</div><div class="tag">Multithreading</div>
+        </div>
+
+        <div class="container-fluid" style="background-color:ghostwhite; font-size:14.5px;">
+          <div class="container">
+            <div class="row py-4 align-items-center">
+              <div class="col-lg-6">
+                &lt;/Tierra Sharae&gt;
+              </div>
+        <div class="col-lg-6 text-right">
+
+        Thanks for reading! Connect with me on <a href="https://www.linkedin.com/in/tierrasharae/" target="_blank">LinkedIn</a>, <a href="http://instagram.com/tierrabyte" target="_blank">Instagram</a>, or <a href="https://bit.ly/tierraIDF" target="_blank">Github</a>.
+        <br>You can also check out my work in <a href="design">UI/UX Design</a> and <a href="communication">Communication</a>.
+            </div>
           </div>
         </div>
-        <br>
-      </div>
-
-
-      <div class="col-lg-4">
-        <div class="card">
-
-          <a href="https://youtu.be/EP61rqtbegY">
-            <img alt='Customiced' src='img/otf.gif'>
-            </a>
-          <div class="card-body">
-            <h5 class="card-title">ON THE FLY</h5>
-            <p class="card-text">Database-enabled web application</p>
-            <div class="tag" style="margin-left:0;">OracleDB</div><div class="tag">Angular</div><div class="tag">Express</div><div class="tag">Node</div>
-
-          </div>
         </div>
-        <br>
-
-      </div>
-
-
-
-      <div class="col-lg-4">
-        <div class="card">
-
-          <a href="https://youtu.be/Kwe_vrnXR4E" target="_blank">
-            <img alt="What's the Temp?" src='img/arduino 8 5.gif'>
-            </a>
-          <div class="card-body">
-            <h5 class="card-title">WHAT'S THE TEMP?</h5>
-            <p class="card-text">Arduino-driven web application</p>
-            <div class="tag">Hardware</div> <div class="tag">Web Development</div>
-          </div>
-        </div>
-        <br>
-      </div>
 
 
 
 
-    <div class="col-lg-4">
-      <div class="card">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="gridder-master/dist/js/jquery.gridder.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
 
-        <a href="https://pennmaterialtexts.org/" target="_blank">
-          <img src='img/coding/hmt.gif'>
-          </a>
-        <div class="card-body">
-          <h5 class="card-title">MATERIAL TEXTS WORKSHOP</h5>
-          <!-- <p class="card-text">Vi</p> -->
-          <div class="tag">Django</div> <div class="tag">Docker</div> <div class="tag">Python</div> <div class="tag">Web Development</div>
+                // REMOVE AND ADD CLICK EVENT
+                $('.doAddItem').on('click', function () {
+                    $(".gridder").data('gridderExpander').gridderAddItem('TEST');
+                });
 
-        </div>
-      </div>
-      <br>
-
-    </div>
-
-
-    <div class="col-lg-4">
-
-      <div class="card">
-        <a href="https://github.com/TierraSharae/PhillyCrimeDetector" target="_blank">
-          <div class="image02">
-            <img alt='Philly Crime Detector' src='img/pcd.gif'>
-        </a>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">PHILLY CRIME DETECTOR</h5>
-        <p class="card-text">Customized computer mouse system</p>
-        <div class="tag">Java</div> <div class="tag">Google Geocoding API</div>
-
-      </div>
-    </div>
-    <br>
-
-  </div>
-
-
-
-  </div>
-
-  <div class="row">
-    <div class="col text-right">
-      <em>This page is under construction as of Summer 2020.</em><br>You can also check out my work in <a href="design">design</a> and <a href="communication">communication.</a>
-    </div>
-  </div>
-
-  </div>
-
-
-  <img src="img/design/ellenahc-hover.gif" width="0" height="0">
-  <img src="img/design/pennstagram-hover.gif" width="0" height="0">
-
-
-
-
-
-  <script src='old/js/jquery.min.js'></script>
-  <script src='old/js/jquery.stellar.min.js'></script>
-  <script src='old/js/modernizr.js'></script>
-  <script src='old/js/owl.carousel.min.js'></script>
-  <script src='old/js/jquery.shuffle.min.js'></script>
-  <script src='old/js/jquery.magnific-popup.min.js'></script>
-  <script src='old/js/validator.min.js'></script>
-  <!-- <script src='old/js/smoothscroll.js'></script> -->
-  <!-- <script src='old/js/script.js'></script> -->
-
-
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body>
-
+                // Call Gridder
+                $(".gridder").gridderExpander({
+                    scrollOffset: 60,
+                    scrollTo: "panel", // "panel" or "listitem"
+                    animationSpeed: 400,
+                    animationEasing: "easeInOutExpo",
+                    showNav: true,
+                    nextText: '<span></span>',
+                    prevText: '<span></span>',
+                    closeText: '<span></span>',
+                    onStart: function () {
+                        console.log("Gridder Inititialized");
+                    },
+                    onExpanded: function (object) {
+                        console.log("Gridder Expanded");
+                    },
+                    onChanged: function (object) {
+                        console.log("Gridder Changed");
+                    },
+                    onClosed: function () {
+                        console.log("Gridder Closed");
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
